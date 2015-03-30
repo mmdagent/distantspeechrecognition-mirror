@@ -1,0 +1,17 @@
+btk (0.5ubuntu2) feisty; urgency=low
+
+  * fixed python import of sfe on newer versions of swig
+
+ -- Tobias Gehrig <tobias@gehrignet.de>  Wed, 24 Jan 2007 18:53:35 +0100
+
+btk (0.5ubuntu1) feisty; urgency=low
+
+  * update for new python version
+
+ -- Tobias Gehrig <tobias@gehrignet.de>  Sat, 20 Jan 2007 23:45:54 +0100
+
+btk (0.5) unstable; urgency=low
+
+  * new release and initial debian package
+
+ -- Tobias Gehrig <tgehrig@ira.uka.de>  Mon, 14 Mar 2005 18:45:03 +0100

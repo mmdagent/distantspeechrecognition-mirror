@@ -1,0 +1,6 @@
+usr/lib/*.so.*
+usr/lib/*.so
+usr/lib/python2.4/site-packages/asr/*.py
+usr/lib/python2.4/site-packages/asr/*.pyc
+usr/lib/python2.4/site-packages/asr/*.pyo
+usr/lib/python2.4/site-packages/asr/*.so*

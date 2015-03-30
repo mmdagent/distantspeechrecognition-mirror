@@ -1,0 +1,21 @@
+Source: asr
+Section: devel
+Priority: optional
+Maintainer: Tobias Gehrig <tgehrig@ira.uka.de>
+Standards-Version: 3.5.8
+Build-Depends: debmake
+
+Package: libasr1-dev
+Architecture: any
+Depends: libasr1, libc6-dev
+Provides: libasr-dev
+Conflicts: libasr-dev
+Description: Missing
+ Missing
+
+Package: libasr1
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Missing
+ Missing
+

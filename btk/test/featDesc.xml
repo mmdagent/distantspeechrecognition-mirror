@@ -1,0 +1,69 @@
+
+
+<featdesc>
+  <filtergraph name="filter1">
+
+    <filter name="source" type="Source">
+      <param name="count" value="10"/>
+      <param name="delay" value="0.1"/>
+    </filter>
+    
+    <filter name="add1" type="Adder">
+      <param name="x" value="2"/>
+      <parent name="source"/>
+    </filter>
+    
+    <filter name="add2" type="Adder">
+      <param name="x" value="8"/>
+      <parent name="add1"/>
+    </filter>
+    
+    <filter name="deco" type="Decorator">
+      <param name="char" value="%%"/>
+      <parent name="add2"/>
+    </filter>
+
+  </filtergraph>
+
+<!--  <filtergraph name="beamformer">
+    <filter name="source" type="SoundMicArray">
+      <param name="buffersize" value="4024"/>
+      <param name="filelist" value="nix"/>
+    </filter>
+    <filter name="channel" type="onechannel">
+      <param name="channel" value="0"/>
+    </filter>
+    <filter name="fft" type="fft"/>
+    <filter name="plot" type="plot"/>
+  </filtergraph> -->
+
+  <filtergraph name="graph">
+    <filter name="source" type="Source">
+      <param name="count" value="40"/>
+      <param name="delay" value="0"/>
+    </filter>    
+    <filter name="add1" type="Adder">
+      <param name="x" value="2"/>
+      <parent name="source"/>
+    </filter>
+    <filter name="add2" type="Adder">
+      <param name="x" value="8"/>
+      <parent name="source"/>
+    </filter>
+    <filter name="merge" type="Merger">
+      <parent name="add1"/>
+      <parent name="add2"/>
+    </filter>
+<!--    <filter name="deco" type="Decorator">
+      <param name="char" value="%%"/>
+      <parent name="merge"/>
+    </filter> -->
+    <!-- if you add this, the graph has two data sinks -->
+<!--
+    <filter name="deco2" type="Decorator">
+      <param name="char" value="%%"/>
+      <parent name="merge"/>
+    </filter>
+-->
+  </filtergraph>
+</featdesc>

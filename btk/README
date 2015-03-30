@@ -1,0 +1,97 @@
+
+                             Beamforming Toolkit
+                                    (btk)
+
+                          Installation Instructions
+
+
+ 1. Required components
+
+To install the 'btk' module, you will need the following components,
+all of which are available with all major Linux releases (e.g., SuSE 9.2):
+
+  python - scripting language interpretter
+  numerical python - Matlab like extension to python
+  gsl - GNU Scientific Library
+  swig - simplified wrapper and interface generator
+  autoconf - automatic project configuration
+  pkgconf - automatic project configuration
+
+The following dependencies are optional. If they are installed on your
+machine, 'autoconf' will find them, then compile and link against them.
+
+  atlas - blas implementation for linux
+  fftw3 - optimized fft computation
+
+  setenv PKG_CONFIG_PATH /home/<user-name>/lib/pkgconfig
+
+
+2. Getting 'btk'
+
+To get 'btk' for the first time, type
+
+  cd ~/src
+  svn checkout svn://svn.code.sf.net/p/distantspeechrecognition/code/ distantspeechrecognition-code
+  cd trunk/btk
+
+If you have an existing working directory that you would like to update, type
+
+  cd ~/src/btk
+  svn update .
+
+
+ 3. Configuration
+
+If you wish to install 'btk' in the global space on a given workstation, type
+
+  cd ~/src/btk
+  ./autogen.sh
+  ./configure
+
+If you would like to install 'btk' in some local directory, type for example
+
+  cd ~/src/btk
+  ./autogen.sh
+  ./configure --prefix=/home/<user-name> CFLAGS='-O4' CXXFLAGS='-O4' CPPFLAGS='-O4' SWIGFLAGS='-O'
+
+where <user-name> is your login id. You need only run the script
+'autogen.sh' once.
+
+If you want to use the 'atlas' blas library, configure with
+
+  ./configure --with-atlas=<path-to-atlas>
+
+
+ 4. Building and Installing
+
+To build and install 'btk', type
+
+  cd ~/src/btk
+  make
+  make install
+
+
+ 5. Adjusting your environment
+
+In order for Python to be able to find and dynamically link the 'btk'
+module, it must be on your PYTHONPATH. If you have installed 'btk'
+locally as described above and you are using 'bash', add the
+line
+  
+  export PYTHONPATH=/home/<user-name>/lib/python2.6/site-packages:/usr/local/lib/python2.6/site-packages:/usr/lib/python2.6/site-packages
+
+to your .bashrc file. If you are using 'tcsh', add the line
+
+  setenv PYTHONPATH /home/jmcd/lib/python2.6/site-packages:/usr/local/lib/python2.6/site-packages:/usr/lib/python2.6/site-packages
+
+to your .tcshrc file.
+
+
+ 6. Testing
+
+To test that everything has been built and installed correctly, start
+the Python interpretter and type
+
+  >>> import btk.modulated
+
+If you get another Python prompt, everything has worked correctly.

@@ -1,0 +1,141 @@
+make  all-recursive
+make[1]: Entering directory `/usr0/home/kkumatan/src/new/btk'
+Making all in include
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/include'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/include'
+Making all in gnulib
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/gnulib'
+make  all-am
+make[3]: Entering directory `/usr0/home/kkumatan/src/new/btk/gnulib'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/usr0/home/kkumatan/src/new/btk/gnulib'
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/gnulib'
+Making all in common
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/common'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/common'
+Making all in utils
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/utils'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/utils'
+Making all in stream
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/stream'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/stream'
+Making all in matrix
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/matrix'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/matrix'
+Making all in driver
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/driver'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/driver'
+Making all in feature
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/feature'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/feature'
+Making all in convolution
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/convolution'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/convolution'
+Making all in lms
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/lms'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/lms'
+Making all in squareRoot
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/squareRoot'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/squareRoot'
+Making all in portnoff
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/portnoff'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/portnoff'
+Making all in modulated
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/modulated'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/modulated'
+Making all in postfilter
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/postfilter'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/postfilter'
+Making all in beamformer
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/beamformer'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/beamformer'
+Making all in sad
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/sad'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/sad'
+Making all in localization
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/localization'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/localization'
+Making all in TDEstimator
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/TDEstimator'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/TDEstimator'
+Making all in maximumLikelihood
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/maximumLikelihood'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/maximumLikelihood'
+Making all in objectiveMeasure
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/objectiveMeasure'
+/home/kkumatan/tmp_btk/bin/swig  -c++ -python -keyword -shadow -I../include  -I/usr/include -O -I..  -c++ -MM ./objectiveMeasure.i > .deps/objectiveMeasure_wrap.cxx.Plo
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/objectiveMeasure'
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/objectiveMeasure'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/objectiveMeasure'
+Making all in cancelVP
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/cancelVP'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -O4  -I.. -I.   -O4  -I.. -I.    -O -MT cancelVP.lo -MD -MP -MF .deps/cancelVP.Tpo -c -o cancelVP.lo cancelVP.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -O4 -I.. -I. -O4 -I.. -I. -O -MT cancelVP.lo -MD -MP -MF .deps/cancelVP.Tpo -c cancelVP.cc  -fPIC -DPIC -o .libs/cancelVP.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -O4 -I.. -I. -O4 -I.. -I. -O -MT cancelVP.lo -MD -MP -MF .deps/cancelVP.Tpo -c cancelVP.cc -o cancelVP.o >/dev/null 2>&1
+mv -f .deps/cancelVP.Tpo .deps/cancelVP.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O -lgsl -lgslcblas -lm    -o libbtk_cancelVP.la -rpath /home/kkumatan/x86_64/lib cancelVP.lo ../stream/libbtk_stream.la -lpthread -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/cancelVP.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/btk/stream/.libs -Wl,-rpath -Wl,/home/kkumatan/x86_64/lib -lgsl -lgslcblas ../stream/.libs/libbtk_stream.so -lpthread -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O   -Wl,-soname -Wl,libbtk_cancelVP.so.0 -o .libs/libbtk_cancelVP.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libbtk_cancelVP.so.0" && ln -s "libbtk_cancelVP.so.0.0.0" "libbtk_cancelVP.so.0")
+libtool: link: (cd ".libs" && rm -f "libbtk_cancelVP.so" && ln -s "libbtk_cancelVP.so.0.0.0" "libbtk_cancelVP.so")
+libtool: link: ar cru .libs/libbtk_cancelVP.a  cancelVP.o
+libtool: link: ranlib .libs/libbtk_cancelVP.a
+libtool: link: ( cd ".libs" && rm -f "libbtk_cancelVP.la" && ln -s "../libbtk_cancelVP.la" "libbtk_cancelVP.la" )
+/home/kkumatan/tmp_btk/bin/swig  -c++ -python -keyword -shadow -I../include  -I/usr/include -O -I..  -c++ -o cancelVP_wrap.cxx cancelVP.i
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -O4  -I.. -I.   -O4  -I.. -I.    -O -MT _cancelVP_la-cancelVP_wrap.lo -MD -MP -MF .deps/_cancelVP_la-cancelVP_wrap.Tpo -c -o _cancelVP_la-cancelVP_wrap.lo `test -f 'cancelVP_wrap.cxx' || echo './'`cancelVP_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -O4 -I.. -I. -O4 -I.. -I. -O -MT _cancelVP_la-cancelVP_wrap.lo -MD -MP -MF .deps/_cancelVP_la-cancelVP_wrap.Tpo -c cancelVP_wrap.cxx  -fPIC -DPIC -o .libs/_cancelVP_la-cancelVP_wrap.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -O4 -I.. -I. -O4 -I.. -I. -O -MT _cancelVP_la-cancelVP_wrap.lo -MD -MP -MF .deps/_cancelVP_la-cancelVP_wrap.Tpo -c cancelVP_wrap.cxx -o _cancelVP_la-cancelVP_wrap.o >/dev/null 2>&1
+mv -f .deps/_cancelVP_la-cancelVP_wrap.Tpo .deps/_cancelVP_la-cancelVP_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O -module -L/usr/lib -lpython2.7   -o _cancelVP.la -rpath /home/kkumatan/x86_64/lib/python2.7/site-packages/btk _cancelVP_la-cancelVP_wrap.lo libbtk_cancelVP.la -lpthread -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_cancelVP_la-cancelVP_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/btk/cancelVP/.libs -Wl,-rpath -Wl,/home/kkumatan/x86_64/lib -L/usr/lib -lpython2.7 ./.libs/libbtk_cancelVP.so -lpthread -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O   -Wl,-soname -Wl,_cancelVP.so.0 -o .libs/_cancelVP.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_cancelVP.so.0" && ln -s "_cancelVP.so.0.0.0" "_cancelVP.so.0")
+libtool: link: (cd ".libs" && rm -f "_cancelVP.so" && ln -s "_cancelVP.so.0.0.0" "_cancelVP.so")
+libtool: link: ar cru .libs/_cancelVP.a  _cancelVP_la-cancelVP_wrap.o
+libtool: link: ranlib .libs/_cancelVP.a
+libtool: link: ( cd ".libs" && rm -f "_cancelVP.la" && ln -s "../_cancelVP.la" "_cancelVP.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/cancelVP'
+Making all in src
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -O4  -I.. -I.     -O -MT superdirectiveBeamformer-superdirectiveBeamformer.o -MD -MP -MF .deps/superdirectiveBeamformer-superdirectiveBeamformer.Tpo -c -o superdirectiveBeamformer-superdirectiveBeamformer.o `test -f 'superdirectiveBeamformer.cc' || echo './'`superdirectiveBeamformer.cc
+superdirectiveBeamformer.cc: In function ‘gsl_matrix* readMicrophonePositionFile(const char*)’:
+superdirectiveBeamformer.cc:89:31: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+superdirectiveBeamformer.cc:96:29: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+superdirectiveBeamformer.cc:97:29: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+superdirectiveBeamformer.cc:98:29: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+mv -f .deps/superdirectiveBeamformer-superdirectiveBeamformer.Tpo .deps/superdirectiveBeamformer-superdirectiveBeamformer.Po
+/bin/sh ../libtool --tag=CXX   --mode=link g++   -O -lgsl -lgslcblas -lm    -lsndfile    -o superdirectiveBeamformer superdirectiveBeamformer-superdirectiveBeamformer.o ../common/libbtk_common.la ../stream/libbtk_stream.la ../feature/libbtk_feature.la ../matrix/libbtk_matrix.la ../postfilter/libbtk_postfilter.la ../modulated/libbtk_modulated.la ../beamformer/libbtk_beamformer.la -lpthread -lutil -lm 
+libtool: link: g++ -O -o .libs/superdirectiveBeamformer superdirectiveBeamformer-superdirectiveBeamformer.o  -lgsl -lgslcblas /usr/lib/x86_64-linux-gnu/libsndfile.so ../common/.libs/libbtk_common.so ../stream/.libs/libbtk_stream.so ../feature/.libs/libbtk_feature.so ../matrix/.libs/libbtk_matrix.so ../postfilter/.libs/libbtk_postfilter.so ../modulated/.libs/libbtk_modulated.so ../beamformer/.libs/libbtk_beamformer.so -lpthread -lutil -lm -Wl,-rpath -Wl,/home/kkumatan/x86_64/lib
+g++ -DHAVE_CONFIG_H -I. -I..   -O4  -I.. -I.     -O -MT ss-ss.o -MD -MP -MF .deps/ss-ss.Tpo -c -o ss-ss.o `test -f 'ss.cc' || echo './'`ss.cc
+mv -f .deps/ss-ss.Tpo .deps/ss-ss.Po
+/bin/sh ../libtool --tag=CXX   --mode=link g++   -O -lgsl -lgslcblas -lm      -o ss ss-ss.o ../common/libbtk_common.la ../stream/libbtk_stream.la ../feature/libbtk_feature.la ../matrix/libbtk_matrix.la ../modulated/libbtk_modulated.la ../postfilter/libbtk_postfilter.la -lpthread -lutil -lm 
+libtool: link: g++ -O -o .libs/ss ss-ss.o  -lgsl -lgslcblas ../common/.libs/libbtk_common.so ../stream/.libs/libbtk_stream.so ../feature/.libs/libbtk_feature.so ../matrix/.libs/libbtk_matrix.so ../modulated/.libs/libbtk_modulated.so ../postfilter/.libs/libbtk_postfilter.so -lpthread -lutil -lm -Wl,-rpath -Wl,/home/kkumatan/x86_64/lib
+g++ -DHAVE_CONFIG_H -I. -I..   -O4  -I.. -I.    -O -MT calcTimeDelay-calcTimeDelay.o -MD -MP -MF .deps/calcTimeDelay-calcTimeDelay.Tpo -c -o calcTimeDelay-calcTimeDelay.o `test -f 'calcTimeDelay.cc' || echo './'`calcTimeDelay.cc
+mv -f .deps/calcTimeDelay-calcTimeDelay.Tpo .deps/calcTimeDelay-calcTimeDelay.Po
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O -lgsl -lgslcblas -lm     -o calcTimeDelay calcTimeDelay-calcTimeDelay.o ../common/libbtk_common.la ../stream/libbtk_stream.la ../feature/libbtk_feature.la ../matrix/libbtk_matrix.la ../TDEstimator/libbtk_TDEstimator.la  -lpthread -lutil -lm 
+libtool: link: g++ -O -o .libs/calcTimeDelay calcTimeDelay-calcTimeDelay.o  -lgsl -lgslcblas ../common/.libs/libbtk_common.so ../stream/.libs/libbtk_stream.so ../feature/.libs/libbtk_feature.so ../matrix/.libs/libbtk_matrix.so ../TDEstimator/.libs/libbtk_TDEstimator.so -lpthread -lutil -lm -Wl,-rpath -Wl,/home/kkumatan/x86_64/lib
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/src'
+Making all in lib
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk/lib'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk/lib'
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/btk'
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/btk'
+make[1]: Leaving directory `/usr0/home/kkumatan/src/new/btk'

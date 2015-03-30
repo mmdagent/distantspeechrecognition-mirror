@@ -1,0 +1,6 @@
+usr/lib/*.so.*
+usr/lib/*.so
+usr/lib/python*/site-packages/btk/*.py
+usr/lib/python*/site-packages/btk/*.pyc
+usr/lib/python*/site-packages/btk/*.pyo
+usr/lib/python*/site-packages/btk/*.so*

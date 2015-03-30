@@ -1,0 +1,21 @@
+Source: btk
+Section: devel
+Priority: optional
+Maintainer: Tobias Gehrig <tgehrig@ira.uka.de>
+Standards-Version: 3.5.8
+Build-Depends: debmake
+
+Package: libbtk1-dev
+Architecture: any
+Depends: libbtk1, libc6-dev
+Provides: libbtk-dev
+Conflicts: libbtk-dev
+Description: Missing
+ Missing
+
+Package: libbtk1
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Missing
+ Missing
+

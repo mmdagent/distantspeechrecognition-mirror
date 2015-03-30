@@ -1,0 +1,5 @@
+asr (0.4) unstable; urgency=low
+
+  * new release and initial debian package
+
+ -- Tobias Gehrig <tgehrig@ira.uka.de>  Thu, 08 Jun 2006 15:32:03 +0100

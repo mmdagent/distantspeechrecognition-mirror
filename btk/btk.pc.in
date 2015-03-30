@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: btk
+Description: Beamforming Toolkit
+Version: @VERSION@
+Libs: -L${libdir} -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature
+Cflags: -I${includedir}/btk

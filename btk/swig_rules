@@ -1,0 +1,26 @@
+# -*- Makefile -*-
+
+.deps:
+	$(MKDIR) .deps
+
+Makefile.in: $(SWIG_RULES)
+
+SWIG_CPP += -I/usr/include -I$(top_builddir)  
+SWIG_OPT += $(SWIGFLAGS)
+
+SWIG_depends := $(SWIG_FILES:%=.deps/%.Plo)
+%_wrap.cxx.Plo: .deps
+	$(SWIG) $(SWIG_OPT) $(SWIG_CPP) -c++ -MM $(srcdir)/$(patsubst .deps/%_wrap.cxx.Plo,%.i, $@) > $@
+%_wrap.cc.Plo: .deps
+	$(SWIG) $(SWIG_OPT) $(SWIG_CPP) -c++ -MM $(srcdir)/$(patsubst .deps/%_wrap.cc.Plo,%.i, $@) > $@
+%_wrap.c.Plo: .deps
+	$(SWIG) $(SWIG_OPT) $(SWIG_CPP) -MM $(srcdir)/$(patsubst .deps/%_wrap.c.Plo,%.i, $@) > $@
+
+-include $(SWIG_depends)
+
+%_wrap.cxx %.py: %.i
+	$(SWIG) $(SWIG_OPT) $(SWIG_CPP) -c++ -o $(notdir $@) $<
+%_wrap.cc %.py: %.i
+	$(SWIG) $(SWIG_OPT) $(SWIG_CPP) -c++ -o $(notdir $@) $<
+%_wrap.c %.py: %.i
+	$(SWIG) $(SWIG_OPT) $(SWIG_CPP) -o $(notdir $@) $<

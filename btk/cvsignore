@@ -1,0 +1,8 @@
+*.pyc
+*_wrap.c
+*_wrap.cxx
+build
+dist
+__version__.py
+*db
+*~

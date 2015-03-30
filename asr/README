@@ -1,0 +1,106 @@
+
+                                  Millennium
+                      Automatic Speech Recognition System
+                                    (asr)
+
+
+                          Installation Instructions
+
+
+ 1. Required Components
+
+To install the 'asr' module, you will need the following components,
+all of which are available with all major Linux releases (e.g., SuSE 9.2):
+
+  python - scripting language interpretter
+  python-devel - .h files for linking with python
+  numerical python - Matlab like extension to python
+  gsl - GNU Scientific Library
+  gsl-devel
+  swig - simplified wrapper and interface generator
+  autoconf - automatic project configuration
+  automake - automatic project configuration
+  pkgconfig - automatic project configuration
+  make - project building
+  libtool - building shared object libraries
+
+The following dependencies are optional. If they are installed on your
+machine, 'autoconf' will find them, then compile and link against them.
+
+  atlas - blas implementation for linux 
+
+'asr' needs a installed version of 'btk'. If 'btk' is installed with a non
+standard prefix, like the users home directory, PKG_CONFIG_PATH has to set
+to the location the 'btk.pc' file is installed.
+
+  setenv PKG_CONFIG_PATH /home/<user-name>/lib/pkgconfig
+
+2. Getting 'asr'
+
+To get 'asr' for the first time, type
+
+  cd ~/src
+  svn checkout svn://svn.code.sf.net/p/distantspeechrecognition/code/ distantspeechrecognition-code
+  cd trunk/asr
+
+If you have an existing working directory that you would like to update, type
+
+  cd ~/src/asr
+  svn update .
+
+
+ 3. Configuration
+
+If you wish to install 'asr' in the global space on a given workstation, type
+
+  cd ~/src/asr
+  ./autogen.sh
+  ./configure
+
+If you would like to install 'asr' in some local directory, type for example
+
+  cd ~/src/asr
+  ./autogen.sh
+  ./configure --prefix=/home/<user-name> CFLAGS='-O4' CXXFLAGS='-O4' CPPFLAGS='-O4' SWIGFLAGS='-O'
+
+where <user-name> is your login id. You need only run the script
+'autogen.sh' once.
+
+If you want to use the 'atlas' blas library, configure with
+
+  ./configure --with-atlas=<path-to-atlas>
+
+
+ 4. Building and Installing
+
+To build and install 'asr', type
+
+  cd ~/src/asr
+  make
+  make install
+
+
+ 5. Adjusting your environment
+
+In order for Python to be able to find and dynamically link the 'asr'
+module, it must be on your PYTHONPATH. If you have installed 'asr'
+locally as described above and you are using 'bash', add the
+line
+  
+  export PYTHONPATH=/home/<user-name>/lib/python2.3/site-packages:/usr/local/lib/python2.3/site-packages:/usr/lib/python2.3/site-packages
+
+to your .bashrc file. If you are using 'tcsh', add the line
+
+  setenv PYTHONPATH /home/jmcd/lib/python2.3/site-packages:/usr/local/lib/python2.3/site-packages:/usr/lib/python2.3/site-packages
+
+to your .tcshrc file.
+
+
+ 6. Testing
+
+To test that everything has been built and installed correctly, start
+the Python interpretter and type
+
+  >>> import asr.decoder
+
+If you get another Python prompt, everything has worked correctly.

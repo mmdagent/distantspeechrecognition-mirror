@@ -1,0 +1,148 @@
+Here is what to do:
+
+    60. Fix 'splitList' hack in 'CodebookSetBasic' and 'DistribSetBasic'.
+
+  * 59. Add check that length of feature and length of mean match.
+
+    58. Extend codebook description file format to include entries on number of
+	subfeatures, etc.
+
+    57. Fix the hacks in 'CodebookSetBasic::__add' and 'DistribSetBasic::__add'.
+
+    56. Test if changes are really necessary to 'WFSTContextDependency' to
+	enable training an unclustered CD model.
+
+    55. Modify constructor of 'FeatureSpaceAdaptationFeature' to accept
+	only complete 'src' and 'distribSet' objects as in 'STCEstimator'.
+
+  * 54. Debug and test minimization.
+
+  * 53. Debug and test weight pushing.
+
+    52. Determine if the residual string is ever longer than one during determinization.
+
+  * 51. Implement capability to dump word lattices.
+
+    50. Consider adding capability to reorder tokens on free list to avoid
+	memory fragmentation.
+
+  * 49. Add a flag to decoder that disables lattice generation.
+
+    48. Correctly implement determinization for log-prob semiring.
+
+    47. Replace all or most 'Edge' classes is fsm module with a class template.
+
+    46. Add namespace specifiers to 'asr', 'btk'.
+
+    45. Implement A* search on polyphone lattices to enable rescoring with
+	a large	language model.
+
+    44. Implement composition of 'HoCoLoG' without determinization to recover
+	correct time alignment of words.
+
+  * 43. Make sure sfe front end correctly performs signal processing needed
+	for the TED system.
+
+    42. Run validation checks on ESST system. Debug if necessary.
+
+    41. Check that residual strings longer than one are correctly handled.
+
+    40. Adopt Kanthak's hashing scheme for composition.
+
+  * 39. 'Lexicon' in fsm.{cc,h} should be based on 'List' class template.
+
+    38. Add source file line numbers to exception statements.
+
+    37. Determine if instances of 'Cast<>' can be replaced by 'static_cast<>'.
+
+  * 36. Restore in data hiding in 'fsm.{cc,h}' by adding appropriate
+	template friend declarations.
+
+  * 35. Extend WFST routines to log-prob semiring with class templates.
+
+  * 34. Implement binary read/write format for WFSTs (WFSTFlyWeight only).
+
+  * 33. 'MemoryManager<>' class template should be parameterized by size
+	instead of type.
+
+    32. Replace numerical optimization routines in 'train/estimateAdapt.{cc,h}'
+	with GSL calls.
+
+  * 31. Debug and test the 'MemoryManager' class template.
+
+  * 30. Test methods 'prune' and 'writeCTM' in 'decoder' module.
+
+    29. Finish Python interface for 'Lattice'.
+
+  * 28. It should be possible to combine overloaded instances of
+	'_expandNode' into a single function in the 'decoder'
+	module.
+
+  * 27. Finish 'Lattice::_topoSort()' for lattice pruning and
+	rescoring.
+
+    26. Remove instances 'Cast<>' in 'decoder.cc'.
+
+  * 25. Move definition and manipulation of lattices in 'decoder'
+	module to 'decoder/lattice.{cc,h}', or possibly to a
+	new 'lattice' module.
+
+  * 24.	Move 'mladaptS.{cc,h}' from 'train' module to 'gaussian'.
+
+  * 23.	Remove old 'path.{cc,h}' files from 'train' module.
+
+  * 22. Write Python scripts to support training.
+
+  * 21. Debug and test 'train' and 'sat' modules.
+
+  * 20. Modify 'cluster.{cc,h}' to work with new system.
+
+  * 19. Rewrite 'decoder' module to use fewer calls to 'new' and
+	'delete'.
+
+  * 18.	Finish debugging and testing lattice generation, pruning
+	and rescoring.
+
+  * 17. Test the updated Portnoff analysis/synthesis filter banks.
+
+  * 16. Write lattice rescoring method.
+
+  * 15. Debug lattice generation.
+
+  * 14. Feature hierarchy ToDo:
+
+      * a) Test 'FilterFeature'.
+      * b) Implement cepstral mean subtraction feature.
+      * c) Implement linear stretching of short-time spectra
+           to be able handle a 22kHz sample rate.
+
+  * 13. Test feature space adaptation (FSA).
+
+  * 12. Test BBI tree capability.
+
+    11. Write WFST routines to perform:
+  *     a) composition,
+  *     b) determinization,
+	c) weight pushing.
+
+    11b. Implemented minimization.
+
+  * 10. Write a simple 'Label' class to support label training.
+
+  *  8. Modify 'Decode' to handle epsilon input transitions.
+
+  *  7. Fix the WFSAcceptor/Transducer hierarchy.
+
+  *  6. Build a simple 'Feature' object as basis for a class
+	hierarchy.
+
+  *  4. Test, debug and extend the context dependency building
+	constructor in 'WFSTransducer'.
+
+  *  3. Finish 'DistribTree' capability.
+
+  *  2.	Finish token passing decoder.
+
+  *  1. Make sure all exceptions defined in 'common/jexception.h'
+     	are caught by SWIG/Python. Alternatively, organize said
+	exceptions in a hierarchy, and catch only top exceptions.

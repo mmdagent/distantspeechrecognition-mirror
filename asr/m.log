@@ -1,0 +1,920 @@
+make  all-recursive
+make[1]: Entering directory `/usr0/home/kkumatan/src/new/asr'
+Making all in dictionary
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/dictionary'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT dictionary.lo -MD -MP -MF .deps/dictionary.Tpo -c -o dictionary.lo dictionary.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT dictionary.lo -MD -MP -MF .deps/dictionary.Tpo -c dictionary.cc  -fPIC -DPIC -o .libs/dictionary.o
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h: In function 'void freadAdd(const String&, char, T*) [with T = Dictionary]':
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h:235:25: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT dictionary.lo -MD -MP -MF .deps/dictionary.Tpo -c dictionary.cc -o dictionary.o >/dev/null 2>&1
+mv -f .deps/dictionary.Tpo .deps/dictionary.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT distribTree.lo -MD -MP -MF .deps/distribTree.Tpo -c -o distribTree.lo distribTree.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT distribTree.lo -MD -MP -MF .deps/distribTree.Tpo -c distribTree.cc  -fPIC -DPIC -o .libs/distribTree.o
+distribTree.cc:32:60: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+distribTree.cc:32:60: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+distribTree.cc:32:60: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+distribTree.cc: In member function 'void DistribTree::write(const String&, const String&)':
+distribTree.cc:1630:55: warning: format '%d' expects argument of type 'int', but argument 3 has type 'std::map<String, refcountable_ptr<DistribTree::Node> >::size_type {aka long unsigned int}' [-Wformat]
+distribTree.cc: In member function 'void DistribTree::_read(const String&)':
+distribTree.cc:1247:26: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT distribTree.lo -MD -MP -MF .deps/distribTree.Tpo -c distribTree.cc -o distribTree.o >/dev/null 2>&1
+mv -f .deps/distribTree.Tpo .deps/distribTree.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT phones.lo -MD -MP -MF .deps/phones.Tpo -c -o phones.lo phones.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT phones.lo -MD -MP -MF .deps/phones.Tpo -c phones.cc  -fPIC -DPIC -o .libs/phones.o
+phones.cc: In member function 'int PhonesSet::read(const String&)':
+phones.cc:193:26: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+phones.cc: In member function 'int Phones::read(const String&)':
+phones.cc:70:26: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT phones.lo -MD -MP -MF .deps/phones.Tpo -c phones.cc -o phones.o >/dev/null 2>&1
+mv -f .deps/phones.Tpo .deps/phones.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT tags.lo -MD -MP -MF .deps/tags.Tpo -c -o tags.lo tags.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT tags.lo -MD -MP -MF .deps/tags.Tpo -c tags.cc  -fPIC -DPIC -o .libs/tags.o
+tags.cc: In member function 'void Tags::write(const String&)':
+tags.cc:112:26: warning: format '%d' expects argument of type 'int', but argument 4 has type 'std::vector<String>::size_type {aka long unsigned int}' [-Wformat]
+tags.cc: In member function 'int Tags::read(const String&)':
+tags.cc:73:26: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT tags.lo -MD -MP -MF .deps/tags.Tpo -c tags.cc -o tags.o >/dev/null 2>&1
+mv -f .deps/tags.Tpo .deps/tags.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT words.lo -MD -MP -MF .deps/words.Tpo -c -o words.lo words.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT words.lo -MD -MP -MF .deps/words.Tpo -c words.cc  -fPIC -DPIC -o .libs/words.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT words.lo -MD -MP -MF .deps/words.Tpo -c words.cc -o words.o >/dev/null 2>&1
+mv -f .deps/words.Tpo .deps/words.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature    -o libasr_dict.la -rpath /home/kkumatan/tmp_btk/lib dictionary.lo distribTree.lo phones.lo tags.lo words.lo  -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/dictionary.o .libs/distribTree.o .libs/phones.o .libs/tags.o .libs/words.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so /home/kkumatan/tmp_btk/lib/libbtk_feature.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_dict.so.0 -o .libs/libasr_dict.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_dict.so.0" && ln -s "libasr_dict.so.0.0.0" "libasr_dict.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_dict.so" && ln -s "libasr_dict.so.0.0.0" "libasr_dict.so")
+libtool: link: ar cru .libs/libasr_dict.a  dictionary.o distribTree.o phones.o tags.o words.o
+libtool: link: ranlib .libs/libasr_dict.a
+libtool: link: ( cd ".libs" && rm -f "libasr_dict.la" && ln -s "../libasr_dict.la" "libasr_dict.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/home/kkumatan/tmp_btk/include/btk   -I/usr/include -I.. -O -c++ -o dict_wrap.cxx dict.i
+dict.i:79: Warning 383: operator++ ignored
+dict.i:83: Warning 325: Nested class not currently supported (Iterator ignored)
+dict.i:203: Warning 325: Nested class not currently supported (Iterator ignored)
+dict.i:241: Warning 325: Nested class not currently supported (Node ignored)
+dict.i:259: Warning 325: Nested class not currently supported (NodePtr ignored)
+dict.i:268: Warning 325: Nested class not currently supported (Iterator ignored)
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT _dict_la-dict_wrap.lo -MD -MP -MF .deps/_dict_la-dict_wrap.Tpo -c -o _dict_la-dict_wrap.lo `test -f 'dict_wrap.cxx' || echo './'`dict_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _dict_la-dict_wrap.lo -MD -MP -MF .deps/_dict_la-dict_wrap.Tpo -c dict_wrap.cxx  -fPIC -DPIC -o .libs/_dict_la-dict_wrap.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _dict_la-dict_wrap.lo -MD -MP -MF .deps/_dict_la-dict_wrap.Tpo -c dict_wrap.cxx -o _dict_la-dict_wrap.o >/dev/null 2>&1
+mv -f .deps/_dict_la-dict_wrap.Tpo .deps/_dict_la-dict_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _dict.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _dict_la-dict_wrap.lo libasr_dict.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_dict_la-dict_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/dictionary/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_dict.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_dict.so.0 -o .libs/_dict.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_dict.so.0" && ln -s "_dict.so.0.0.0" "_dict.so.0")
+libtool: link: (cd ".libs" && rm -f "_dict.so" && ln -s "_dict.so.0.0.0" "_dict.so")
+libtool: link: ar cru .libs/_dict.a  _dict_la-dict_wrap.o
+libtool: link: ranlib .libs/_dict.a
+libtool: link: ( cd ".libs" && rm -f "_dict.la" && ln -s "../_dict.la" "_dict.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/dictionary'
+Making all in natural
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/natural'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT natural.lo -MD -MP -MF .deps/natural.Tpo -c -o natural.lo natural.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT natural.lo -MD -MP -MF .deps/natural.Tpo -c natural.cc  -fPIC -DPIC -o .libs/natural.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT natural.lo -MD -MP -MF .deps/natural.Tpo -c natural.cc -o natural.o >/dev/null 2>&1
+mv -f .deps/natural.Tpo .deps/natural.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature    -o libasr_natural.la -rpath /home/kkumatan/tmp_btk/lib natural.lo  -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/natural.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so /home/kkumatan/tmp_btk/lib/libbtk_feature.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_natural.so.0 -o .libs/libasr_natural.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_natural.so.0" && ln -s "libasr_natural.so.0.0.0" "libasr_natural.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_natural.so" && ln -s "libasr_natural.so.0.0.0" "libasr_natural.so")
+libtool: link: ar cru .libs/libasr_natural.a  natural.o
+libtool: link: ranlib .libs/libasr_natural.a
+libtool: link: ( cd ".libs" && rm -f "libasr_natural.la" && ln -s "../libasr_natural.la" "libasr_natural.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/home/kkumatan/tmp_btk/include/btk   -I/usr/include -I.. -O -c++ -o natural_wrap.cxx natural.i
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT _natural_la-natural_wrap.lo -MD -MP -MF .deps/_natural_la-natural_wrap.Tpo -c -o _natural_la-natural_wrap.lo `test -f 'natural_wrap.cxx' || echo './'`natural_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _natural_la-natural_wrap.lo -MD -MP -MF .deps/_natural_la-natural_wrap.Tpo -c natural_wrap.cxx  -fPIC -DPIC -o .libs/_natural_la-natural_wrap.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _natural_la-natural_wrap.lo -MD -MP -MF .deps/_natural_la-natural_wrap.Tpo -c natural_wrap.cxx -o _natural_la-natural_wrap.o >/dev/null 2>&1
+mv -f .deps/_natural_la-natural_wrap.Tpo .deps/_natural_la-natural_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _natural.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _natural_la-natural_wrap.lo libasr_natural.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_natural_la-natural_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/natural/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_natural.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_natural.so.0 -o .libs/_natural.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_natural.so.0" && ln -s "_natural.so.0.0.0" "_natural.so.0")
+libtool: link: (cd ".libs" && rm -f "_natural.so" && ln -s "_natural.so.0.0.0" "_natural.so")
+libtool: link: ar cru .libs/_natural.a  _natural_la-natural_wrap.o
+libtool: link: ranlib .libs/_natural.a
+libtool: link: ( cd ".libs" && rm -f "_natural.la" && ln -s "../_natural.la" "_natural.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/natural'
+Making all in gaussian
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/gaussian'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk     -O4  -I.. -I.   -O4 -MT codebookBasic.lo -MD -MP -MF .deps/codebookBasic.Tpo -c -o codebookBasic.lo codebookBasic.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookBasic.lo -MD -MP -MF .deps/codebookBasic.Tpo -c codebookBasic.cc  -fPIC -DPIC -o .libs/codebookBasic.o
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h: In function 'void freadAdd(const String&, char, T*) [with T = CodebookSetBasic]':
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h:235:25: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookBasic.lo -MD -MP -MF .deps/codebookBasic.Tpo -c codebookBasic.cc -o codebookBasic.o >/dev/null 2>&1
+mv -f .deps/codebookBasic.Tpo .deps/codebookBasic.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk     -O4  -I.. -I.   -O4 -MT distribBasic.lo -MD -MP -MF .deps/distribBasic.Tpo -c -o distribBasic.lo distribBasic.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT distribBasic.lo -MD -MP -MF .deps/distribBasic.Tpo -c distribBasic.cc  -fPIC -DPIC -o .libs/distribBasic.o
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h: In function 'void freadAdd(const String&, char, T*) [with T = DistribSetBasic]':
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h:235:25: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT distribBasic.lo -MD -MP -MF .deps/distribBasic.Tpo -c distribBasic.cc -o distribBasic.o >/dev/null 2>&1
+mv -f .deps/distribBasic.Tpo .deps/distribBasic.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature   -lgsl -lgslcblas -lm   -lbtk_feature  -o libasr_gaussian.la -rpath /home/kkumatan/tmp_btk/lib codebookBasic.lo distribBasic.lo  -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/codebookBasic.o .libs/distribBasic.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so -lgsl -lgslcblas /home/kkumatan/tmp_btk/lib/libbtk_feature.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_gaussian.so.0 -o .libs/libasr_gaussian.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_gaussian.so.0" && ln -s "libasr_gaussian.so.0.0.0" "libasr_gaussian.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_gaussian.so" && ln -s "libasr_gaussian.so.0.0.0" "libasr_gaussian.so")
+libtool: link: ar cru .libs/libasr_gaussian.a  codebookBasic.o distribBasic.o
+libtool: link: ranlib .libs/libasr_gaussian.a
+libtool: link: ( cd ".libs" && rm -f "libasr_gaussian.la" && ln -s "../libasr_gaussian.la" "libasr_gaussian.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/home/kkumatan/tmp_btk/include/btk     -I/usr/include -I.. -O -c++ -o gaussian_wrap.cxx gaussian.i
+gaussian.i:276: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+gaussian.i:431: Warning 325: Nested class not currently supported (Iterator ignored)
+gaussian.i:492: Warning 325: Nested class not currently supported (Iterator ignored)
+gaussian.i:498: Warning 401: Nothing known about base class 'Countable'. Ignored.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:186: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:189: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:212: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:215: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1214: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1217: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: previous declaration of 'operator ->'.
+gaussian.i:294: Warning 511: Can't use keyword arguments with overloaded functions (CodebookSetBasicPtr::__getitem__(String const)).
+gaussian.i:299: Warning 511: Can't use keyword arguments with overloaded functions (CodebookSetBasicPtr::__getitem__(unsigned int)).
+gaussian.i:294: Warning 472: Overloaded method CodebookSetBasicPtr::__getitem__(unsigned int) with no explicit typecheck typemap for arg 1 of type 'String const'
+gaussian.i:478: Warning 511: Can't use keyword arguments with overloaded functions (DistribSetBasicPtr::__getitem__(String const)).
+gaussian.i:483: Warning 511: Can't use keyword arguments with overloaded functions (DistribSetBasicPtr::__getitem__(unsigned int)).
+gaussian.i:478: Warning 472: Overloaded method DistribSetBasicPtr::__getitem__(unsigned int) with no explicit typecheck typemap for arg 1 of type 'String const'
+gaussian.i:548: Warning 511: Can't use keyword arguments with overloaded functions (DistribSetMultiStreamPtr::DistribSetMultiStreamPtr(DistribSetBasicPtr &,DistribSetBasicPtr &,double,double)).
+gaussian.i:552: Warning 511: Can't use keyword arguments with overloaded functions (DistribSetMultiStreamPtr::DistribSetMultiStreamPtr(DistribSetBasicPtr &,DistribSetBasicPtr &,DistribMapPtr &,double,double)).
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk     -O4  -I.. -I.   -O4 -MT _gaussian_la-gaussian_wrap.lo -MD -MP -MF .deps/_gaussian_la-gaussian_wrap.Tpo -c -o _gaussian_la-gaussian_wrap.lo `test -f 'gaussian_wrap.cxx' || echo './'`gaussian_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _gaussian_la-gaussian_wrap.lo -MD -MP -MF .deps/_gaussian_la-gaussian_wrap.Tpo -c gaussian_wrap.cxx  -fPIC -DPIC -o .libs/_gaussian_la-gaussian_wrap.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _gaussian_la-gaussian_wrap.lo -MD -MP -MF .deps/_gaussian_la-gaussian_wrap.Tpo -c gaussian_wrap.cxx -o _gaussian_la-gaussian_wrap.o >/dev/null 2>&1
+mv -f .deps/_gaussian_la-gaussian_wrap.Tpo .deps/_gaussian_la-gaussian_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _gaussian.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _gaussian_la-gaussian_wrap.lo libasr_gaussian.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_gaussian_la-gaussian_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/gaussian/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_gaussian.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_gaussian.so.0 -o .libs/_gaussian.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_gaussian.so.0" && ln -s "_gaussian.so.0.0.0" "_gaussian.so.0")
+libtool: link: (cd ".libs" && rm -f "_gaussian.so" && ln -s "_gaussian.so.0.0.0" "_gaussian.so")
+libtool: link: ar cru .libs/_gaussian.a  _gaussian_la-gaussian_wrap.o
+libtool: link: ranlib .libs/_gaussian.a
+libtool: link: ( cd ".libs" && rm -f "_gaussian.la" && ln -s "../_gaussian.la" "_gaussian.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/gaussian'
+Making all in path
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/path'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT codebookPath.lo -MD -MP -MF .deps/codebookPath.Tpo -c -o codebookPath.lo codebookPath.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookPath.lo -MD -MP -MF .deps/codebookPath.Tpo -c codebookPath.cc  -fPIC -DPIC -o .libs/codebookPath.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookPath.lo -MD -MP -MF .deps/codebookPath.Tpo -c codebookPath.cc -o codebookPath.o >/dev/null 2>&1
+mv -f .deps/codebookPath.Tpo .deps/codebookPath.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT distribPath.lo -MD -MP -MF .deps/distribPath.Tpo -c -o distribPath.lo distribPath.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT distribPath.lo -MD -MP -MF .deps/distribPath.Tpo -c distribPath.cc  -fPIC -DPIC -o .libs/distribPath.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT distribPath.lo -MD -MP -MF .deps/distribPath.Tpo -c distribPath.cc -o distribPath.o >/dev/null 2>&1
+mv -f .deps/distribPath.Tpo .deps/distribPath.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature    -o libasr_path.la -rpath /home/kkumatan/tmp_btk/lib codebookPath.lo distribPath.lo ../gaussian/libasr_gaussian.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/codebookPath.o .libs/distribPath.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/gaussian/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so /home/kkumatan/tmp_btk/lib/libbtk_feature.so ../gaussian/.libs/libasr_gaussian.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_path.so.0 -o .libs/libasr_path.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_path.so.0" && ln -s "libasr_path.so.0.0.0" "libasr_path.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_path.so" && ln -s "libasr_path.so.0.0.0" "libasr_path.so")
+libtool: link: ar cru .libs/libasr_path.a  codebookPath.o distribPath.o
+libtool: link: ranlib .libs/libasr_path.a
+libtool: link: ( cd ".libs" && rm -f "libasr_path.la" && ln -s "../libasr_path.la" "libasr_path.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/home/kkumatan/tmp_btk/include/btk   -I/usr/include -I.. -O -c++ -o path_wrap.cxx path.i
+../gaussian/gaussian.i:276: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+../gaussian/gaussian.i:431: Warning 325: Nested class not currently supported (Iterator ignored)
+../gaussian/gaussian.i:492: Warning 325: Nested class not currently supported (Iterator ignored)
+path.i:94: Warning 325: Nested class not currently supported (Iterator ignored)
+path.i:153: Warning 325: Nested class not currently supported (Iterator ignored)
+../gaussian/gaussian.i:498: Warning 401: Nothing known about base class 'Countable'. Ignored.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:186: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:189: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:212: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:215: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1214: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1217: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: previous declaration of 'operator ->'.
+path.i:160: Warning 511: Can't use keyword arguments with overloaded functions (DistribPathPtr::DistribPathPtr(DistribSetPtr &,String const &)).
+path.i:164: Warning 511: Can't use keyword arguments with overloaded functions (DistribPathPtr::DistribPathPtr(DistribSetPtr &,DistribPathPtr &)).
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT _path_la-path_wrap.lo -MD -MP -MF .deps/_path_la-path_wrap.Tpo -c -o _path_la-path_wrap.lo `test -f 'path_wrap.cxx' || echo './'`path_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _path_la-path_wrap.lo -MD -MP -MF .deps/_path_la-path_wrap.Tpo -c path_wrap.cxx  -fPIC -DPIC -o .libs/_path_la-path_wrap.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _path_la-path_wrap.lo -MD -MP -MF .deps/_path_la-path_wrap.Tpo -c path_wrap.cxx -o _path_la-path_wrap.o >/dev/null 2>&1
+mv -f .deps/_path_la-path_wrap.Tpo .deps/_path_la-path_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _path.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _path_la-path_wrap.lo libasr_path.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_path_la-path_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/path/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_path.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_path.so.0 -o .libs/_path.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_path.so.0" && ln -s "_path.so.0.0.0" "_path.so.0")
+libtool: link: (cd ".libs" && rm -f "_path.so" && ln -s "_path.so.0.0.0" "_path.so")
+libtool: link: ar cru .libs/_path.a  _path_la-path_wrap.o
+libtool: link: ranlib .libs/_path.a
+libtool: link: ( cd ".libs" && rm -f "_path.la" && ln -s "../_path.la" "_path.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/path'
+Making all in fsm
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/fsm'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT fsm.lo -MD -MP -MF .deps/fsm.Tpo -c -o fsm.lo fsm.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT fsm.lo -MD -MP -MF .deps/fsm.Tpo -c fsm.cc  -fPIC -DPIC -o .libs/fsm.o
+In file included from ../fsm/fsm.h:44:0,
+                 from fsm.cc:33:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+fsm.cc: In member function 'void WeightPusher::_calculatePotentials(const WFSTransducerPtr&)':
+fsm.cc:1669:76: warning: format '%d' expects argument of type 'int', but argument 2 has type 'std::queue<unsigned int, std::list<unsigned int> >::size_type {aka long unsigned int}' [-Wformat]
+fsm.cc: In member function 'void WFSTEpsilonMinusOneRemoval::_purge()':
+fsm.cc:2085:50: warning: format '%d' expects argument of type 'int', but argument 2 has type 'std::map<unsigned int, Inherit<WFSTEpsilonMinusOneRemoval::Node, Inherit<WFSTEpsilonRemoval::Node, Inherit<WFSTSortedInput::Node, Inherit<WFSTransducer::Node, refcountable_ptr<WFSAcceptor::Node> > > > > >::size_type {aka long unsigned int}' [-Wformat]
+fsm.cc: In member function 'void EncodeWFST::_encode(WFSAcceptor::Ptr&, WFSTransducer::NodePtr&, unsigned int&)':
+fsm.cc:6673:60: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat]
+fsm.cc:6691:44: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT fsm.lo -MD -MP -MF .deps/fsm.Tpo -c fsm.cc -o fsm.o >/dev/null 2>&1
+mv -f .deps/fsm.Tpo .deps/fsm.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT skhash.lo -MD -MP -MF .deps/skhash.Tpo -c -o skhash.lo skhash.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT skhash.lo -MD -MP -MF .deps/skhash.Tpo -c skhash.cc  -fPIC -DPIC -o .libs/skhash.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT skhash.lo -MD -MP -MF .deps/skhash.Tpo -c skhash.cc -o skhash.o >/dev/null 2>&1
+mv -f .deps/skhash.Tpo .deps/skhash.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature    -o libasr_fsm.la -rpath /home/kkumatan/tmp_btk/lib fsm.lo skhash.lo ../dictionary/libasr_dict.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/fsm.o .libs/skhash.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/dictionary/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so /home/kkumatan/tmp_btk/lib/libbtk_feature.so ../dictionary/.libs/libasr_dict.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_fsm.so.0 -o .libs/libasr_fsm.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_fsm.so.0" && ln -s "libasr_fsm.so.0.0.0" "libasr_fsm.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_fsm.so" && ln -s "libasr_fsm.so.0.0.0" "libasr_fsm.so")
+libtool: link: ar cru .libs/libasr_fsm.a  fsm.o skhash.o
+libtool: link: ranlib .libs/libasr_fsm.a
+libtool: link: ( cd ".libs" && rm -f "libasr_fsm.la" && ln -s "../libasr_fsm.la" "libasr_fsm.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/home/kkumatan/tmp_btk/include/btk   -I/usr/include -I.. -O -c++ -o fsm_wrap.cxx fsm.i
+fsm.i:91: Warning 511: Can't use keyword arguments with overloaded functions (WFSAcceptorPtr::WFSAcceptorPtr(LexiconPtr &)).
+fsm.i:94: Warning 511: Can't use keyword arguments with overloaded functions (WFSAcceptorPtr::WFSAcceptorPtr(LexiconPtr &,LexiconPtr &,String const &)).
+fsm.i:146: Warning 511: Can't use keyword arguments with overloaded functions (WFSTransducerPtr::WFSTransducerPtr(WFSAcceptorPtr &,String const &)).
+fsm.i:150: Warning 511: Can't use keyword arguments with overloaded functions (WFSTransducerPtr::WFSTransducerPtr(LexiconPtr,LexiconPtr,LexiconPtr,String const &)).
+fsm.i:211: Warning 511: Can't use keyword arguments with overloaded functions (WFSTSortedInputPtr::WFSTSortedInputPtr(WFSAcceptorPtr const &)).
+fsm.i:215: Warning 511: Can't use keyword arguments with overloaded functions (WFSTSortedInputPtr::WFSTSortedInputPtr(WFSTransducerPtr const &,bool)).
+fsm.i:220: Warning 511: Can't use keyword arguments with overloaded functions (WFSTSortedInputPtr::WFSTSortedInputPtr(LexiconPtr &,LexiconPtr &,LexiconPtr &,bool,String const &)).
+fsm.i:336: Warning 511: Can't use keyword arguments with overloaded functions (WFSTSortedOutputPtr::WFSTSortedOutputPtr(WFSAcceptorPtr const &,bool)).
+fsm.i:339: Warning 511: Can't use keyword arguments with overloaded functions (WFSTSortedOutputPtr::WFSTSortedOutputPtr(WFSTransducerPtr const &)).
+fsm.i:342: Warning 511: Can't use keyword arguments with overloaded functions (WFSTSortedOutputPtr::WFSTSortedOutputPtr(LexiconPtr &,LexiconPtr &,LexiconPtr &,String const &)).
+fsm.i:448: Warning 511: Can't use keyword arguments with overloaded functions (WFSTIndexedPtr::WFSTIndexedPtr(WFSAcceptorPtr const &,bool)).
+fsm.i:453: Warning 511: Can't use keyword arguments with overloaded functions (WFSTIndexedPtr::WFSTIndexedPtr(LexiconPtr &,LexiconPtr &,String const &,String const &)).
+fsm.i:457: Warning 511: Can't use keyword arguments with overloaded functions (WFSTIndexedPtr::WFSTIndexedPtr(LexiconPtr &,LexiconPtr &,LexiconPtr &,String const &)).
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT _fsm_la-fsm_wrap.lo -MD -MP -MF .deps/_fsm_la-fsm_wrap.Tpo -c -o _fsm_la-fsm_wrap.lo `test -f 'fsm_wrap.cxx' || echo './'`fsm_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _fsm_la-fsm_wrap.lo -MD -MP -MF .deps/_fsm_la-fsm_wrap.Tpo -c fsm_wrap.cxx  -fPIC -DPIC -o .libs/_fsm_la-fsm_wrap.o
+In file included from fsm.h:44:0,
+                 from fsm_wrap.cxx:3105:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _fsm_la-fsm_wrap.lo -MD -MP -MF .deps/_fsm_la-fsm_wrap.Tpo -c fsm_wrap.cxx -o _fsm_la-fsm_wrap.o >/dev/null 2>&1
+mv -f .deps/_fsm_la-fsm_wrap.Tpo .deps/_fsm_la-fsm_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _fsm.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _fsm_la-fsm_wrap.lo libasr_fsm.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_fsm_la-fsm_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/fsm/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_fsm.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_fsm.so.0 -o .libs/_fsm.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_fsm.so.0" && ln -s "_fsm.so.0.0.0" "_fsm.so.0")
+libtool: link: (cd ".libs" && rm -f "_fsm.so" && ln -s "_fsm.so.0.0.0" "_fsm.so")
+libtool: link: ar cru .libs/_fsm.a  _fsm_la-fsm_wrap.o
+libtool: link: ranlib .libs/_fsm.a
+libtool: link: ( cd ".libs" && rm -f "_fsm.la" && ln -s "../_fsm.la" "_fsm.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/fsm'
+Making all in lattice
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/lattice'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT lattice.lo -MD -MP -MF .deps/lattice.Tpo -c -o lattice.lo lattice.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT lattice.lo -MD -MP -MF .deps/lattice.Tpo -c lattice.cc  -fPIC -DPIC -o .libs/lattice.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../lattice/lattice.h:31,
+                 from lattice.cc:30:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+In file included from /home/kkumatan/tmp_btk/include/btk/feature/feature.h:53:0,
+                 from ../gaussian/codebookBasic.h:31,
+                 from ../gaussian/distribBasic.h:29,
+                 from ../lattice/lattice.h:32,
+                 from lattice.cc:30:
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: warning: "PACKAGE" redefined [enabled by default]
+../config.h:112:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+../config.h:118:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+../config.h:121:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+../config.h:124:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+../config.h:130:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: warning: "VERSION" redefined [enabled by default]
+../config.h:136:0: note: this is the location of the previous definition
+lattice.cc: In member function 'void Lattice::purge()':
+lattice.cc:840:65: warning: format '%d' expects argument of type 'int', but argument 2 has type 'std::list<Inherit<Lattice::Node, Inherit<WFST<LatticeNodeData, LatticeEdgeData>::Node, Inherit<WFSTransducer::Node, refcountable_ptr<WFSAcceptor::Node> > > > >::size_type {aka long unsigned int}' [-Wformat]
+lattice.cc: In member function 'void Lattice::_topoSort()':
+lattice.cc:886:56: warning: format '%d' expects argument of type 'int', but argument 2 has type 'std::list<Inherit<Lattice::Node, Inherit<WFST<LatticeNodeData, LatticeEdgeData>::Node, Inherit<WFSTransducer::Node, refcountable_ptr<WFSAcceptor::Node> > > > >::size_type {aka long unsigned int}' [-Wformat]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT lattice.lo -MD -MP -MF .deps/lattice.Tpo -c lattice.cc -o lattice.o >/dev/null 2>&1
+mv -f .deps/lattice.Tpo .deps/lattice.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature    -o libasr_lattice.la -rpath /home/kkumatan/tmp_btk/lib lattice.lo ../gaussian/libasr_gaussian.la ../fsm/libasr_fsm.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/lattice.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/gaussian/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/fsm/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so /home/kkumatan/tmp_btk/lib/libbtk_feature.so ../gaussian/.libs/libasr_gaussian.so ../fsm/.libs/libasr_fsm.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_lattice.so.0 -o .libs/libasr_lattice.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_lattice.so.0" && ln -s "libasr_lattice.so.0.0.0" "libasr_lattice.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_lattice.so" && ln -s "libasr_lattice.so.0.0.0" "libasr_lattice.so")
+libtool: link: ar cru .libs/libasr_lattice.a  lattice.o
+libtool: link: ranlib .libs/libasr_lattice.a
+libtool: link: ( cd ".libs" && rm -f "libasr_lattice.la" && ln -s "../libasr_lattice.la" "libasr_lattice.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/home/kkumatan/tmp_btk/include/btk   -I/usr/include -I.. -O -c++ -o lattice_wrap.cxx lattice.i
+lattice.i:161: Warning 325: Nested class not currently supported (Node ignored)
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT _lattice_la-lattice_wrap.lo -MD -MP -MF .deps/_lattice_la-lattice_wrap.Tpo -c -o _lattice_la-lattice_wrap.lo `test -f 'lattice_wrap.cxx' || echo './'`lattice_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _lattice_la-lattice_wrap.lo -MD -MP -MF .deps/_lattice_la-lattice_wrap.Tpo -c lattice_wrap.cxx  -fPIC -DPIC -o .libs/_lattice_la-lattice_wrap.o
+In file included from ../fsm/fsm.h:44:0,
+                 from lattice_wrap.cxx:3099:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+In file included from /home/kkumatan/tmp_btk/include/btk/feature/feature.h:53:0,
+                 from ../gaussian/codebookBasic.h:31,
+                 from ../gaussian/distribBasic.h:29,
+                 from ../lattice/lattice.h:32,
+                 from lattice_wrap.cxx:3100:
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: warning: "PACKAGE" redefined [enabled by default]
+../config.h:112:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+../config.h:118:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+../config.h:121:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+../config.h:124:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+../config.h:130:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: warning: "VERSION" redefined [enabled by default]
+../config.h:136:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _lattice_la-lattice_wrap.lo -MD -MP -MF .deps/_lattice_la-lattice_wrap.Tpo -c lattice_wrap.cxx -o _lattice_la-lattice_wrap.o >/dev/null 2>&1
+mv -f .deps/_lattice_la-lattice_wrap.Tpo .deps/_lattice_la-lattice_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _lattice.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _lattice_la-lattice_wrap.lo libasr_lattice.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_lattice_la-lattice_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/lattice/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_lattice.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_lattice.so.0 -o .libs/_lattice.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_lattice.so.0" && ln -s "_lattice.so.0.0.0" "_lattice.so.0")
+libtool: link: (cd ".libs" && rm -f "_lattice.so" && ln -s "_lattice.so.0.0.0" "_lattice.so")
+libtool: link: ar cru .libs/_lattice.a  _lattice_la-lattice_wrap.o
+libtool: link: ranlib .libs/_lattice.a
+libtool: link: ( cd ".libs" && rm -f "_lattice.la" && ln -s "../_lattice.la" "_lattice.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/lattice'
+Making all in decoder
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/decoder'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT decoder.lo -MD -MP -MF .deps/decoder.Tpo -c -o decoder.lo decoder.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT decoder.lo -MD -MP -MF .deps/decoder.Tpo -c decoder.cc  -fPIC -DPIC -o .libs/decoder.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../decoder/decoder.h:35,
+                 from decoder.cc:26:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+In file included from /home/kkumatan/tmp_btk/include/btk/feature/feature.h:53:0,
+                 from ../gaussian/codebookBasic.h:31,
+                 from ../gaussian/distribBasic.h:29,
+                 from ../decoder/decoder.h:36,
+                 from decoder.cc:26:
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: warning: "PACKAGE" redefined [enabled by default]
+../config.h:112:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+../config.h:118:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+../config.h:121:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+../config.h:124:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+../config.h:130:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: warning: "VERSION" redefined [enabled by default]
+../config.h:136:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT decoder.lo -MD -MP -MF .deps/decoder.Tpo -c decoder.cc -o decoder.o >/dev/null 2>&1
+mv -f .deps/decoder.Tpo .deps/decoder.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT wfstFlyWeight.lo -MD -MP -MF .deps/wfstFlyWeight.Tpo -c -o wfstFlyWeight.lo wfstFlyWeight.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT wfstFlyWeight.lo -MD -MP -MF .deps/wfstFlyWeight.Tpo -c wfstFlyWeight.cc  -fPIC -DPIC -o .libs/wfstFlyWeight.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../decoder/wfstFlyWeight.h:29,
+                 from wfstFlyWeight.cc:26:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT wfstFlyWeight.lo -MD -MP -MF .deps/wfstFlyWeight.Tpo -c wfstFlyWeight.cc -o wfstFlyWeight.o >/dev/null 2>&1
+mv -f .deps/wfstFlyWeight.Tpo .deps/wfstFlyWeight.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature    -o libasr_decoder.la -rpath /home/kkumatan/tmp_btk/lib decoder.lo wfstFlyWeight.lo ../lattice/libasr_lattice.la ../path/libasr_path.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/decoder.o .libs/wfstFlyWeight.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/lattice/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/path/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so /home/kkumatan/tmp_btk/lib/libbtk_feature.so ../lattice/.libs/libasr_lattice.so ../path/.libs/libasr_path.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_decoder.so.0 -o .libs/libasr_decoder.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_decoder.so.0" && ln -s "libasr_decoder.so.0.0.0" "libasr_decoder.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_decoder.so" && ln -s "libasr_decoder.so.0.0.0" "libasr_decoder.so")
+libtool: link: ar cru .libs/libasr_decoder.a  decoder.o wfstFlyWeight.o
+libtool: link: ranlib .libs/libasr_decoder.a
+libtool: link: ( cd ".libs" && rm -f "libasr_decoder.la" && ln -s "../libasr_decoder.la" "libasr_decoder.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk   -I/usr/include -I.. -O -c++ -o decoder_wrap.cxx decoder.i
+../lattice/lattice.i:161: Warning 325: Nested class not currently supported (Node ignored)
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk   -O4  -I.. -I.   -O4 -MT _decoder_la-decoder_wrap.lo -MD -MP -MF .deps/_decoder_la-decoder_wrap.Tpo -c -o _decoder_la-decoder_wrap.lo `test -f 'decoder_wrap.cxx' || echo './'`decoder_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _decoder_la-decoder_wrap.lo -MD -MP -MF .deps/_decoder_la-decoder_wrap.Tpo -c decoder_wrap.cxx  -fPIC -DPIC -o .libs/_decoder_la-decoder_wrap.o
+In file included from ../fsm/fsm.h:44:0,
+                 from decoder_wrap.cxx:3096:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+In file included from /home/kkumatan/tmp_btk/include/btk/feature/feature.h:53:0,
+                 from ../gaussian/codebookBasic.h:31,
+                 from ../gaussian/distribBasic.h:29,
+                 from ../decoder/decoder.h:36,
+                 from decoder_wrap.cxx:3097:
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: warning: "PACKAGE" redefined [enabled by default]
+../config.h:112:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+../config.h:118:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+../config.h:121:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+../config.h:124:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+../config.h:130:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: warning: "VERSION" redefined [enabled by default]
+../config.h:136:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _decoder_la-decoder_wrap.lo -MD -MP -MF .deps/_decoder_la-decoder_wrap.Tpo -c decoder_wrap.cxx -o _decoder_la-decoder_wrap.o >/dev/null 2>&1
+mv -f .deps/_decoder_la-decoder_wrap.Tpo .deps/_decoder_la-decoder_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _decoder.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _decoder_la-decoder_wrap.lo libasr_decoder.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_decoder_la-decoder_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/decoder/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_decoder.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_decoder.so.0 -o .libs/_decoder.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_decoder.so.0" && ln -s "_decoder.so.0.0.0" "_decoder.so.0")
+libtool: link: (cd ".libs" && rm -f "_decoder.so" && ln -s "_decoder.so.0.0.0" "_decoder.so")
+libtool: link: ar cru .libs/_decoder.a  _decoder_la-decoder_wrap.o
+libtool: link: ranlib .libs/_decoder.a
+libtool: link: ( cd ".libs" && rm -f "_decoder.la" && ln -s "../_decoder.la" "_decoder.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/decoder'
+Making all in adapt
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/adapt'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk     -O4  -I.. -I.   -O4 -MT codebookAdapt.lo -MD -MP -MF .deps/codebookAdapt.Tpo -c -o codebookAdapt.lo codebookAdapt.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookAdapt.lo -MD -MP -MF .deps/codebookAdapt.Tpo -c codebookAdapt.cc  -fPIC -DPIC -o .libs/codebookAdapt.o
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h: In function 'void freadAdd(const String&, char, T*) [with T = CodebookSetAdapt]':
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h:235:25: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookAdapt.lo -MD -MP -MF .deps/codebookAdapt.Tpo -c codebookAdapt.cc -o codebookAdapt.o >/dev/null 2>&1
+mv -f .deps/codebookAdapt.Tpo .deps/codebookAdapt.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/home/kkumatan/tmp_btk/include/btk     -O4  -I.. -I.   -O4 -MT transform.lo -MD -MP -MF .deps/transform.Tpo -c -o transform.lo transform.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT transform.lo -MD -MP -MF .deps/transform.Tpo -c transform.cc  -fPIC -DPIC -o .libs/transform.o
+transform.cc: In member function 'virtual void STCParam::_getParams(FILE*)':
+transform.cc:702:28: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+transform.cc:714:30: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+transform.cc: In member function 'virtual void MLLRParam::_getParams(FILE*)':
+transform.cc:591:28: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+transform.cc:603:30: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+transform.cc: In member function 'virtual void APTParamBase::_getParams(FILE*)':
+transform.cc:433:29: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+transform.cc:438:27: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+transform.cc: In member function 'void ParamBase::_getBiasOffset(FILE*)':
+transform.cc:291:29: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+transform.cc:296:27: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+transform.cc: In member function 'void ParamBase::_getRegClass(FILE*)':
+transform.cc:285:31: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT transform.lo -MD -MP -MF .deps/transform.Tpo -c transform.cc -o transform.o >/dev/null 2>&1
+mv -f .deps/transform.Tpo .deps/transform.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature   -lgsl -lgslcblas -lm   -lbtk_feature   -o libasr_adapt.la -rpath /home/kkumatan/tmp_btk/lib codebookAdapt.lo transform.lo ../gaussian/libasr_gaussian.la ../natural/libasr_natural.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/codebookAdapt.o .libs/transform.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/gaussian/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/natural/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so -lgsl -lgslcblas /home/kkumatan/tmp_btk/lib/libbtk_feature.so ../gaussian/.libs/libasr_gaussian.so ../natural/.libs/libasr_natural.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_adapt.so.0 -o .libs/libasr_adapt.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_adapt.so.0" && ln -s "libasr_adapt.so.0.0.0" "libasr_adapt.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_adapt.so" && ln -s "libasr_adapt.so.0.0.0" "libasr_adapt.so")
+libtool: link: ar cru .libs/libasr_adapt.a  codebookAdapt.o transform.o
+libtool: link: ranlib .libs/libasr_adapt.a
+libtool: link: ( cd ".libs" && rm -f "libasr_adapt.la" && ln -s "../libasr_adapt.la" "libasr_adapt.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/home/kkumatan/tmp_btk/include/btk     -I/usr/include -I.. -O -c++ -o adapt_wrap.cxx adapt.i
+../gaussian/gaussian.i:276: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+../gaussian/gaussian.i:431: Warning 325: Nested class not currently supported (Iterator ignored)
+../gaussian/gaussian.i:492: Warning 325: Nested class not currently supported (Iterator ignored)
+adapt.i:157: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+../gaussian/gaussian.i:498: Warning 401: Nothing known about base class 'Countable'. Ignored.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:186: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:189: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:212: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:215: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1214: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1217: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: previous declaration of 'operator ->'.
+adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk     -O4  -I.. -I.   -O4 -MT _adapt_la-adapt_wrap.lo -MD -MP -MF .deps/_adapt_la-adapt_wrap.Tpo -c -o _adapt_la-adapt_wrap.lo `test -f 'adapt_wrap.cxx' || echo './'`adapt_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _adapt_la-adapt_wrap.lo -MD -MP -MF .deps/_adapt_la-adapt_wrap.Tpo -c adapt_wrap.cxx  -fPIC -DPIC -o .libs/_adapt_la-adapt_wrap.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _adapt_la-adapt_wrap.lo -MD -MP -MF .deps/_adapt_la-adapt_wrap.Tpo -c adapt_wrap.cxx -o _adapt_la-adapt_wrap.o >/dev/null 2>&1
+mv -f .deps/_adapt_la-adapt_wrap.Tpo .deps/_adapt_la-adapt_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _adapt.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _adapt_la-adapt_wrap.lo libasr_adapt.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_adapt_la-adapt_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/adapt/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_adapt.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_adapt.so.0 -o .libs/_adapt.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_adapt.so.0" && ln -s "_adapt.so.0.0.0" "_adapt.so.0")
+libtool: link: (cd ".libs" && rm -f "_adapt.so" && ln -s "_adapt.so.0.0.0" "_adapt.so")
+libtool: link: ar cru .libs/_adapt.a  _adapt_la-adapt_wrap.o
+libtool: link: ranlib .libs/_adapt.a
+libtool: link: ( cd ".libs" && rm -f "_adapt.la" && ln -s "../_adapt.la" "_adapt.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/adapt'
+Making all in train
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/train'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT codebookTrain.lo -MD -MP -MF .deps/codebookTrain.Tpo -c -o codebookTrain.lo codebookTrain.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookTrain.lo -MD -MP -MF .deps/codebookTrain.Tpo -c codebookTrain.cc  -fPIC -DPIC -o .libs/codebookTrain.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../train/codebookTrain.h:31,
+                 from codebookTrain.cc:26:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h: In function 'void freadAdd(const String&, char, T*) [with T = CodebookSetTrain]':
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h:235:25: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookTrain.lo -MD -MP -MF .deps/codebookTrain.Tpo -c codebookTrain.cc -o codebookTrain.o >/dev/null 2>&1
+mv -f .deps/codebookTrain.Tpo .deps/codebookTrain.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT distribTrain.lo -MD -MP -MF .deps/distribTrain.Tpo -c -o distribTrain.lo distribTrain.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT distribTrain.lo -MD -MP -MF .deps/distribTrain.Tpo -c distribTrain.cc  -fPIC -DPIC -o .libs/distribTrain.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../decoder/decoder.h:35,
+                 from ../train/distribTrain.h:32,
+                 from distribTrain.cc:27:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h: In function 'void freadAdd(const String&, char, T*) [with T = DistribSetTrain]':
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h:235:25: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT distribTrain.lo -MD -MP -MF .deps/distribTrain.Tpo -c distribTrain.cc -o distribTrain.o >/dev/null 2>&1
+mv -f .deps/distribTrain.Tpo .deps/distribTrain.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT estimateAdapt.lo -MD -MP -MF .deps/estimateAdapt.Tpo -c -o estimateAdapt.lo estimateAdapt.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT estimateAdapt.lo -MD -MP -MF .deps/estimateAdapt.Tpo -c estimateAdapt.cc  -fPIC -DPIC -o .libs/estimateAdapt.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../decoder/decoder.h:35,
+                 from ../train/distribTrain.h:32,
+                 from ../train/estimateAdapt.h:42,
+                 from estimateAdapt.cc:32:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT estimateAdapt.lo -MD -MP -MF .deps/estimateAdapt.Tpo -c estimateAdapt.cc -o estimateAdapt.o >/dev/null 2>&1
+mv -f .deps/estimateAdapt.Tpo .deps/estimateAdapt.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT fsa.lo -MD -MP -MF .deps/fsa.Tpo -c -o fsa.lo fsa.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT fsa.lo -MD -MP -MF .deps/fsa.Tpo -c fsa.cc  -fPIC -DPIC -o .libs/fsa.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../lattice/lattice.h:31,
+                 from ../train/fsa.h:36,
+                 from fsa.cc:26:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT fsa.lo -MD -MP -MF .deps/fsa.Tpo -c fsa.cc -o fsa.o >/dev/null 2>&1
+mv -f .deps/fsa.Tpo .deps/fsa.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT stateClustering.lo -MD -MP -MF .deps/stateClustering.Tpo -c -o stateClustering.lo stateClustering.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT stateClustering.lo -MD -MP -MF .deps/stateClustering.Tpo -c stateClustering.cc  -fPIC -DPIC -o .libs/stateClustering.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../train/codebookTrain.h:31,
+                 from ../train/stateClustering.h:29,
+                 from stateClustering.cc:26:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT stateClustering.lo -MD -MP -MF .deps/stateClustering.Tpo -c stateClustering.cc -o stateClustering.o >/dev/null 2>&1
+mv -f .deps/stateClustering.Tpo .deps/stateClustering.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature    -o libasr_train.la -rpath /home/kkumatan/tmp_btk/lib codebookTrain.lo distribTrain.lo estimateAdapt.lo fsa.lo stateClustering.lo ../dictionary/libasr_dict.la ../gaussian/libasr_gaussian.la ../path/libasr_path.la ../fsm/libasr_fsm.la ../lattice/libasr_lattice.la ../decoder/libasr_decoder.la ../adapt/libasr_adapt.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/codebookTrain.o .libs/distribTrain.o .libs/estimateAdapt.o .libs/fsa.o .libs/stateClustering.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/dictionary/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/gaussian/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/path/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/fsm/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/lattice/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/decoder/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/adapt/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so /home/kkumatan/tmp_btk/lib/libbtk_feature.so ../dictionary/.libs/libasr_dict.so ../gaussian/.libs/libasr_gaussian.so ../path/.libs/libasr_path.so ../fsm/.libs/libasr_fsm.so ../lattice/.libs/libasr_lattice.so ../decoder/.libs/libasr_decoder.so ../adapt/.libs/libasr_adapt.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_train.so.0 -o .libs/libasr_train.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_train.so.0" && ln -s "libasr_train.so.0.0.0" "libasr_train.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_train.so" && ln -s "libasr_train.so.0.0.0" "libasr_train.so")
+libtool: link: ar cru .libs/libasr_train.a  codebookTrain.o distribTrain.o estimateAdapt.o fsa.o stateClustering.o
+libtool: link: ranlib .libs/libasr_train.a
+libtool: link: ( cd ".libs" && rm -f "libasr_train.la" && ln -s "../libasr_train.la" "libasr_train.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -I/usr/include -I.. -O -c++ -o train_wrap.cxx train.i
+../gaussian/gaussian.i:276: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+../gaussian/gaussian.i:431: Warning 325: Nested class not currently supported (Iterator ignored)
+../gaussian/gaussian.i:492: Warning 325: Nested class not currently supported (Iterator ignored)
+../adapt/adapt.i:157: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+../dictionary/dict.i:79: Warning 383: operator++ ignored
+../dictionary/dict.i:83: Warning 325: Nested class not currently supported (Iterator ignored)
+../dictionary/dict.i:203: Warning 325: Nested class not currently supported (Iterator ignored)
+../dictionary/dict.i:241: Warning 325: Nested class not currently supported (Node ignored)
+../dictionary/dict.i:259: Warning 325: Nested class not currently supported (NodePtr ignored)
+../dictionary/dict.i:268: Warning 325: Nested class not currently supported (Iterator ignored)
+train.i:209: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+train.i:316: Warning 325: Nested class not currently supported (Iterator ignored)
+train.i:650: Warning 302: Identifier 'clusterCodebooks' redefined (ignored),
+train.i:620: Warning 302: previous definition of 'clusterCodebooks'.
+../gaussian/gaussian.i:498: Warning 401: Nothing known about base class 'Countable'. Ignored.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:186: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:189: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:212: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:215: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1214: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1217: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: previous declaration of 'operator ->'.
+../adapt/adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+../adapt/adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+../adapt/adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+../adapt/adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+../adapt/adapt.i:241: Warning 314: 'from' is a python keyword, renaming to '_from'
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT _train_la-train_wrap.lo -MD -MP -MF .deps/_train_la-train_wrap.Tpo -c -o _train_la-train_wrap.lo `test -f 'train_wrap.cxx' || echo './'`train_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _train_la-train_wrap.lo -MD -MP -MF .deps/_train_la-train_wrap.Tpo -c train_wrap.cxx  -fPIC -DPIC -o .libs/_train_la-train_wrap.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../train/codebookTrain.h:31,
+                 from train_wrap.cxx:3227:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _train_la-train_wrap.lo -MD -MP -MF .deps/_train_la-train_wrap.Tpo -c train_wrap.cxx -o _train_la-train_wrap.o >/dev/null 2>&1
+mv -f .deps/_train_la-train_wrap.Tpo .deps/_train_la-train_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _train.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _train_la-train_wrap.lo libasr_train.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_train_la-train_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/train/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_train.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_train.so.0 -o .libs/_train.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_train.so.0" && ln -s "_train.so.0.0.0" "_train.so.0")
+libtool: link: (cd ".libs" && rm -f "_train.so" && ln -s "_train.so.0.0.0" "_train.so")
+libtool: link: ar cru .libs/_train.a  _train_la-train_wrap.o
+libtool: link: ranlib .libs/_train.a
+libtool: link: ( cd ".libs" && rm -f "_train.la" && ln -s "../_train.la" "_train.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/train'
+Making all in sat
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/sat'
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT cluster.lo -MD -MP -MF .deps/cluster.Tpo -c -o cluster.lo cluster.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT cluster.lo -MD -MP -MF .deps/cluster.Tpo -c cluster.cc  -fPIC -DPIC -o .libs/cluster.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../decoder/decoder.h:35,
+                 from ../train/distribTrain.h:32,
+                 from ../train/estimateAdapt.h:42,
+                 from ../sat/cluster.h:33,
+                 from cluster.cc:27:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT cluster.lo -MD -MP -MF .deps/cluster.Tpo -c cluster.cc -o cluster.o >/dev/null 2>&1
+mv -f .deps/cluster.Tpo .deps/cluster.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT codebookFastSAT.lo -MD -MP -MF .deps/codebookFastSAT.Tpo -c -o codebookFastSAT.lo codebookFastSAT.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookFastSAT.lo -MD -MP -MF .deps/codebookFastSAT.Tpo -c codebookFastSAT.cc  -fPIC -DPIC -o .libs/codebookFastSAT.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../train/codebookTrain.h:31,
+                 from ../sat/codebookFastSAT.h:29,
+                 from codebookFastSAT.cc:29:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h: In function 'void freadAdd(const String&, char, T*) [with T = CodebookSetFastSAT]':
+/home/kkumatan/tmp_btk/include/btk/common/mlist.h:235:25: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT codebookFastSAT.lo -MD -MP -MF .deps/codebookFastSAT.Tpo -c codebookFastSAT.cc -o codebookFastSAT.o >/dev/null 2>&1
+mv -f .deps/codebookFastSAT.Tpo .deps/codebookFastSAT.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT sat.lo -MD -MP -MF .deps/sat.Tpo -c -o sat.lo sat.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT sat.lo -MD -MP -MF .deps/sat.Tpo -c sat.cc  -fPIC -DPIC -o .libs/sat.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../train/codebookTrain.h:31,
+                 from ../sat/codebookFastSAT.h:29,
+                 from ../sat/sat.h:33,
+                 from sat.cc:28:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT sat.lo -MD -MP -MF .deps/sat.Tpo -c sat.cc -o sat.o >/dev/null 2>&1
+mv -f .deps/sat.Tpo .deps/sat.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -L/home/kkumatan/tmp_btk/lib -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature    -o libasr_sat.la -rpath /home/kkumatan/tmp_btk/lib cluster.lo codebookFastSAT.lo sat.lo ../gaussian/libasr_gaussian.la ../train/libasr_train.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/cluster.o .libs/codebookFastSAT.o .libs/sat.o   -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/gaussian/.libs -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/train/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/home/kkumatan/tmp_btk/lib /home/kkumatan/tmp_btk/lib/libbtk_common.so /home/kkumatan/tmp_btk/lib/libbtk_stream.so /home/kkumatan/tmp_btk/lib/libbtk_matrix.so /home/kkumatan/tmp_btk/lib/libbtk_feature.so ../gaussian/.libs/libasr_gaussian.so ../train/.libs/libasr_train.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,libasr_sat.so.0 -o .libs/libasr_sat.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libasr_sat.so.0" && ln -s "libasr_sat.so.0.0.0" "libasr_sat.so.0")
+libtool: link: (cd ".libs" && rm -f "libasr_sat.so" && ln -s "libasr_sat.so.0.0.0" "libasr_sat.so")
+libtool: link: ar cru .libs/libasr_sat.a  cluster.o codebookFastSAT.o sat.o
+libtool: link: ranlib .libs/libasr_sat.a
+libtool: link: ( cd ".libs" && rm -f "libasr_sat.la" && ln -s "../libasr_sat.la" "libasr_sat.la" )
+/home/kkumatan/tmp_btk/bin/swig -python -c++ -keyword -shadow -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -I/usr/include -I.. -O -c++ -o sat_wrap.cxx sat.i
+../gaussian/gaussian.i:276: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+../gaussian/gaussian.i:431: Warning 325: Nested class not currently supported (Iterator ignored)
+../gaussian/gaussian.i:492: Warning 325: Nested class not currently supported (Iterator ignored)
+../adapt/adapt.i:157: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+../dictionary/dict.i:79: Warning 383: operator++ ignored
+../dictionary/dict.i:83: Warning 325: Nested class not currently supported (Iterator ignored)
+../dictionary/dict.i:203: Warning 325: Nested class not currently supported (Iterator ignored)
+../dictionary/dict.i:241: Warning 325: Nested class not currently supported (Node ignored)
+../dictionary/dict.i:259: Warning 325: Nested class not currently supported (NodePtr ignored)
+../dictionary/dict.i:268: Warning 325: Nested class not currently supported (Iterator ignored)
+../train/train.i:209: Warning 325: Nested class not currently supported (CodebookIterator ignored)
+../train/train.i:316: Warning 325: Nested class not currently supported (Iterator ignored)
+../train/train.i:650: Warning 302: Identifier 'clusterCodebooks' redefined (ignored),
+../train/train.i:620: Warning 302: previous definition of 'clusterCodebooks'.
+../gaussian/gaussian.i:498: Warning 401: Nothing known about base class 'Countable'. Ignored.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:186: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:189: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:87: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:90: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:212: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:215: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:114: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:117: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1214: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/feature/feature.i:1217: Warning 508: previous declaration of 'operator ->'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: Declaration of '__iter__' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:141: Warning 508: previous declaration of '__iter__'.
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: Declaration of 'operator ->' shadows declaration accessible via operator->(),
+/home/kkumatan/tmp_btk/include/btk/stream/stream.i:144: Warning 508: previous declaration of 'operator ->'.
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk    -O4  -I.. -I.   -O4 -MT _sat_la-sat_wrap.lo -MD -MP -MF .deps/_sat_la-sat_wrap.Tpo -c -o _sat_la-sat_wrap.lo `test -f 'sat_wrap.cxx' || echo './'`sat_wrap.cxx
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _sat_la-sat_wrap.lo -MD -MP -MF .deps/_sat_la-sat_wrap.Tpo -c sat_wrap.cxx  -fPIC -DPIC -o .libs/_sat_la-sat_wrap.o
+In file included from ../fsm/fsm.h:44:0,
+                 from ../lattice/lattice.h:31,
+                 from ../train/fsa.h:36,
+                 from sat_wrap.cxx:3159:
+../config.h:112:0: warning: "PACKAGE" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:145:0: note: this is the location of the previous definition
+../config.h:118:0: warning: "PACKAGE_NAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:151:0: note: this is the location of the previous definition
+../config.h:121:0: warning: "PACKAGE_STRING" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:154:0: note: this is the location of the previous definition
+../config.h:124:0: warning: "PACKAGE_TARNAME" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:157:0: note: this is the location of the previous definition
+../config.h:130:0: warning: "PACKAGE_VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:163:0: note: this is the location of the previous definition
+../config.h:136:0: warning: "VERSION" redefined [enabled by default]
+/home/kkumatan/tmp_btk/include/btk/btk.h:194:0: note: this is the location of the previous definition
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/kkumatan/tmp_btk/include/btk -O4 -I.. -I. -O4 -MT _sat_la-sat_wrap.lo -MD -MP -MF .deps/_sat_la-sat_wrap.Tpo -c sat_wrap.cxx -o _sat_la-sat_wrap.o >/dev/null 2>&1
+mv -f .deps/_sat_la-sat_wrap.Tpo .deps/_sat_la-sat_wrap.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -O4 -module -L/usr/lib/python2.7/config -lpython2.7   -o _sat.la -rpath /home/kkumatan/tmp_btk/lib/python2.7/site-packages/asr _sat_la-sat_wrap.lo libasr_sat.la -lutil -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.6/crtbeginS.o  .libs/_sat_la-sat_wrap.o   -Wl,-rpath -Wl,/home/kkumatan/src/new/asr/sat/.libs -Wl,-rpath -Wl,/home/kkumatan/tmp_btk/lib -L/usr/lib/python2.7/config -lpython2.7 ./.libs/libasr_sat.so -lutil -L/usr/lib/gcc/x86_64-linux-gnu/4.6 -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crtn.o  -O4   -Wl,-soname -Wl,_sat.so.0 -o .libs/_sat.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "_sat.so.0" && ln -s "_sat.so.0.0.0" "_sat.so.0")
+libtool: link: (cd ".libs" && rm -f "_sat.so" && ln -s "_sat.so.0.0.0" "_sat.so")
+libtool: link: ar cru .libs/_sat.a  _sat_la-sat_wrap.o
+libtool: link: ranlib .libs/_sat.a
+libtool: link: ( cd ".libs" && rm -f "_sat.la" && ln -s "../_sat.la" "_sat.la" )
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/sat'
+Making all in lib
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr/lib'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr/lib'
+make[2]: Entering directory `/usr0/home/kkumatan/src/new/asr'
+make[2]: Leaving directory `/usr0/home/kkumatan/src/new/asr'
+make[1]: Leaving directory `/usr0/home/kkumatan/src/new/asr'

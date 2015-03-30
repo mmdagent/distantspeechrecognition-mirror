@@ -1,0 +1,225 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ(2.57)
+AC_INIT(btk, 0.5, jmcd)
+AC_CONFIG_SRCDIR([portnoff/portnoff.cc])
+AC_CANONICAL_SYSTEM
+AM_INIT_AUTOMAKE
+AC_CONFIG_HEADER([btk.h])
+AC_CONFIG_MACRO_DIR([m4])
+
+# Checks for programs.
+AC_PROG_CC
+gl_EARLY
+AC_PROG_CXX
+#AC_PROG_CPP
+AC_PROG_LIBTOOL
+AC_PROG_AWK
+AC_PROG_EGREP
+#AC_PROG_LN_S
+
+# For gnulib.
+gl_SOURCE_BASE(gnulib)
+gl_MODULES(getline realloc malloc)
+gl_INIT
+
+# check for SWIG
+AM_PATH_PYTHON(2.3)
+AX_PYTHON_DEVEL(">= '2.3.1'")
+AX_PKG_SWIG(1.3.24, [], [ AC_MSG_ERROR([SWIG is required to build..]) ])
+SWIGFLAGS="-c++ -python -keyword -shadow"
+
+AC_SUBST([SWIGFLAGS])
+save_CPPFLAGS="$CPPFLAGS"
+CPPFLAGS="$CPPFLAGS $PYTHON_CPPFLAGS"
+#AC_CHECK_HEADER(
+#    numpy/arrayobject.h, [],
+#    [AC_MSG_ERROR(could not find numpy Python headers)],
+#    [#include <Python.h> ])
+CPPFLAGS="$save_CPPFLAGS"
+
+# Checks for libraries.
+
+AC_CHECK_LIB(m, main)
+AC_CHECK_LIB(util, main)
+
+PKG_CHECK_MODULES(SNDFILE, sndfile >= 1.0.0)
+PKG_CHECK_MODULES(SAMPLERATE, samplerate >= 0.0.13, 
+    [
+                        AC_DEFINE([SRCONV], [], ["Use lib samplerate"])
+                        SAMPLERATEDEP="samplerate"
+    ],
+    [
+                        AC_MSG_WARN("Building without libsamplerate!")
+                ])
+
+AC_SUBST([SAMPLERATEDEP])
+PKG_CHECK_MODULES(JACK, jack >= 0.98, 
+    [
+                        AC_DEFINE([JACK], [], ["Use libjack"])
+                        JACKDEP="jack"
+    ],
+    [
+                        AC_MSG_WARN("Building without libjack!")
+                ])
+AC_SUBST([JACKDEP])
+
+PKG_CHECK_MODULES(AVFORMAT, libavformat >= 52.31.0,
+    [
+                        AC_DEFINE([AVFORMAT], [], ["Using avformat"])
+                        AVFORMATDEP="avformat"
+    ],
+    [
+                        AC_MSG_WARN("Building without libavformat!")
+                ])
+AC_SUBST([AVFORMATDEP])
+
+PKG_CHECK_MODULES(AVCODEC, libavcodec >= 52.20.0, 
+    [
+                        AC_DEFINE([AVCODEC], [], ["Using avcodec"])
+                        AVCODECDEP="avcodec"
+    ],
+    [
+                        AC_MSG_WARN("Building without libavcodec!")
+                ])
+AC_SUBST([AVCODECDEP])
+
+# check for opencv
+PKG_CHECK_MODULES(OPENCV, opencv >= 2.0, 
+    [
+                        AC_DEFINE([OPENCV], [], ["Using openCV"])
+                        AVCODECDEP="openCV"
+    ],
+    [
+                        AC_MSG_WARN("Building without openCV!")
+                ])
+
+AC_ARG_WITH([atlas],
+	    AC_HELP_STRING([--with-atlas=PATH], [use ATLAS version of BLAS]),
+     	    [
+		case $withval in
+		  /*) # Absolute
+			ATLAS_DIR=$withval;;
+		  *)
+			ATLAS_DIR=$PWD/$withval ;;
+		esac
+		LDFLAGS="$LDFLAGS -L$ATLAS_DIR/lib"
+		CPPFLAGS="$CPPFLAGS -I$ATLAS_DIR/include"
+		AC_CHECK_LIB(atlas, main,
+		    [AC_CHECK_LIB(cblas, main,
+		       [AC_CHECK_LIB(lapack, main, ,[AC_MSG_ERROR([cannot find ATLAS libraries.])])]
+                    )],
+		)
+		AC_CHECK_HEADER(cblas.h, ,[AC_MSG_ERROR([cannot find cblas.h])])
+		export GSL_CBLAS_LIB="-lcblas -latlas -llapack"
+	    ])
+
+# check for GSL
+PKG_CHECK_MODULES(GSL, gsl > 1.11,
+    [
+                        AC_MSG_NOTICE("GSL version > 1.11")
+    ],
+    [
+                        AC_MSG_NOTICE("Look for old version of GSL")
+                        PKG_CHECK_MODULES(GSL, gsl >= 1.10 )
+                        AC_MSG_WARN("Bulding with the old version of GSL")
+                        AC_DEFINE([HAVE_GSL_V11X], [], [Use the old version of GSL])
+                ])
+
+PKG_CHECK_MODULES(MPATROL, mpatrol >= 1.4.7,
+    [
+                        AC_DEFINE([MPATROL], [], ["Use mpatrol"])
+                        MPATROLDEP="mpatrol"
+    ],
+    [
+                        AC_MSG_WARN("Building without mpatrol!")
+                ])
+AC_SUBST([MPATROLDEP])
+
+AC_CHECK_LIB(pthread, main, , [AC_MSG_ERROR([cannot find the pthread library.])])
+
+# Mark IV system 
+USE_MARKIV="no"
+AC_ARG_WITH([markIV],
+            [AS_HELP_STRING([--with-markIV], [Use the markIV libraries])],
+            [
+                      AC_DEFINE([HAVE_LIBMARKIV], [], [Use markIV libraries])
+                      USE_MARKIV="yes"
+                      #MARKIV_CFLAGS="-I$withval"
+		      #MARKIV_LIBS="-L$withval -lmk4lib"
+            ],
+            [])
+AC_SUBST([MARKIV_CFLAGS])
+AC_SUBST([MARKIV_LIBS])
+
+# check for fftw3
+PKG_CHECK_MODULES(FFTW, fftw3 >= 3.0.0, 
+    [
+        AC_CHECK_LIB([fftw3_threads], [main], ,[AC_MSG_ERROR([cannot find fftw3_threads lib.])], [-lfftw3 -lpthread])
+        HAVE_FFTW="yes"
+        LDFLAGS="$LDFLAGS $FFTW_LIBS"
+        CPPFLAGS="$CPPFLAGS $FFTW_CFLAGS"
+        AC_DEFINE([HAVE_LIBFFTW3], [], [Use FFT3 libraries])
+	FFTWDEP="fftw3"
+    ], [HAVE_FFTW="no"])
+AC_SUBST([FFTWDEP])
+
+# Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS([fcntl.h float.h limits.h malloc.h stdlib.h string.h unistd.h error.h])
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_STDBOOL
+AC_C_CONST
+AC_C_INLINE
+AC_TYPE_SIZE_T
+
+# Checks for library functions.
+AC_FUNC_MALLOC
+AC_FUNC_REALLOC
+AC_FUNC_STAT
+AC_FUNC_VPRINTF
+AC_CHECK_FUNCS([floor memset pow sqrt strchr strtoul])
+		    
+AC_SUBST([SWIG_RULES], ['$(top_srcdir)/swig_rules'])
+CPPFLAGS_NEW=' -I${top_srcdir} -I${srcdir} '
+CPPFLAGS="$CPPFLAGS $CPPFLAGS_NEW "
+
+#prefix="/usr/local"
+#libdir="${prefix}/lib64"
+#if test $build_cpu = "x86_64" ; then
+#    libdir="${prefix}/lib64"
+#fi
+
+AC_CONFIG_FILES([Makefile \
+		 btk.pc \
+		 include/Makefile \
+		 common/Makefile \
+		 utils/Makefile \
+		 stream/Makefile \
+		 matrix/Makefile \
+		 driver/Makefile \
+		 feature/Makefile \
+		 gnulib/Makefile \
+		 convolution/Makefile \
+		 lms/Makefile \
+		 squareRoot/Makefile \
+		 portnoff/Makefile \
+		 modulated/Makefile \
+		 localization/Makefile \
+		 postfilter/Makefile \
+		 beamformer/Makefile \
+		 TDEstimator/Makefile \
+		 cancelVP/Makefile \
+		 maximumLikelihood/Makefile \
+		 objectiveMeasure/Makefile \
+		 sad/Makefile \
+		 src/Makefile \
+		 lib/Makefile \
+		 ])
+AC_OUTPUT
+
+echo
+echo "FFTW support .... : " $HAVE_FFTW
+echo

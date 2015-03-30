@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="chapter01" xmlns="http://docbook.org/ns/docbook" version="5.0" >
+  <title>Speech Front End for Microphone arrays </title>
+  <section xml:id="chapter01_section01">
+    <title>Smart Pointers</title>
+    <para>This chapter explains the operation and use of the Speech Frontend.</para>
+  </section>
+</chapter>

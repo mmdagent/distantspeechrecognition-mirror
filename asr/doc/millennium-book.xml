@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xml:id="wikiply_doc" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0">
+  <title>The Millennium Book</title>
+  <bookinfo>
+    <author>
+      <personname><firstname>John</firstname><surname>McDonough</surname></personname>
+    </author>
+    <legalnotice>
+      <para>Copyright 2012 John McDonough. All rights reserved.</para>
+      <para>Redistribution and use in source (SGML DocBook) and 'compiled' forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted.</para>
+    </legalnotice>
+    <copyright><year>2012</year><holder>John McDonough</holder></copyright>
+  </bookinfo>
+  <xi:include href="chapter01.xml"/>
+  <xi:include href="chapter02.xml"/>
+</book>

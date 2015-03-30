@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="installation" xmlns="http://docbook.org/ns/docbook" version="5.0" >
+<title>Sample Chapter</title>
+    <section xml:id="sample_chapter">
+        <title>Sample Chapter</title>
+        <para>This is example text in sample chapter</para>
+    </section>
+</chapter>

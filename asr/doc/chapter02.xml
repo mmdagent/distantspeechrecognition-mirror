@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="chapter02" xmlns="http://docbook.org/ns/docbook" version="5.0" >
+  <title>Millennium Automatic Speech Recognition System (asr)</title>
+  <para>This chapter explains the operation and use of the Millennium Automatic Speech Recognition System (asr).</para>
+  <section xml:id="chapter02_section01">
+    <title>Enigma Finite-State Transducer Library (fst)</title>
+    <para>This chapter explains the operation and use of the Enigma Weight Finite-State Transducer Library (fst).</para>
+  </section>
+  <section xml:id="chapter02_section02">
+    <title>Basic Recipes</title>
+    <para>This section presents a few basic recipes for system training and speech recognition.</para>
+    <section xml:id="context-independent-training">
+
+      <title>Context Independent Training</title>
+
+      <para>In this section, we will learn how to train a
+      context-independent (CI) system. In the next section, we will
+      use this small system for speech recognition. In succeeding
+      sections, we will use it to initialize unclustered and clustered
+      context-dependent (CD) systems; the latter will provide far
+      higher performance than the CI system.</para>
+
+      <itemizedlist mark='opencircle'>
+	<listitem>
+	  <para>
+	    Estimate global mean and covariance from training data with python globalMeanVariance.py
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Create codebook and distribution set descriptions for CI model with ./createDescriptions.py
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Create distribution lexicon from distribution set description:
+
+	    echo eps > ./wghts/DistribLexiconCI.txt
+ 	
+	    NOTE: Must add end of word labels.
+
+	    zcat ./wghts/contextIndependent.dssDesc.gz | fgrep -v ';' | gawk '{print $1}' >> ./wghts/DistribLexiconCI.txt
+	    python
+	    >>> from asr.fsm import *
+	    >>> lex = LexiconPtr('Distribution Lexicon')
+	    >>> lex.read('./wghts/DistribLexiconCI.txt')
+	    >>> lex.write('./wghts/DistribLexiconCI.txt')
+	    ctrl-D
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Initialize all means and covariances in CI model to global mean and covariance with initializeContextIndependentModel.py
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Create context independent 'H' transducer with python createH.py
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Perform five iterations of Viterbi training on CI model without optional 'SIL'
+	    and 'BREATH'. Then perform additional five Viterbi iterations with optional
+	    'SIL' and 'BREATH' with python trainCI.py
+	  </para>
+	</listitem>
+      </itemizedlist>
+    </section>
+
+    <section xml:id="unclustered-context-dependent-training">
+
+      <title>Unclustered Context-Independent Training</title>
+
+      <para>In this section, we will learn how to train an unclustered
+      context-dependent (CD) system. In succeeding sections, we will
+      use this small system to initialize unclustered and clustered
+      context-dependent (CD) systems; the latter will provide far
+      higher performance than the CI system.</para>
+
+      <itemizedlist mark='opencircle'>
+	<listitem>
+	  <para>
+	    Perform Viterbi alignment on training utterances with CI model for silence
+	    insertion and selection of pronunciation variants with python insertSilence.py
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Expand all unclustered triphones in the data base.
+
+	    python expandPolyphones.py
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Create descriptions files for the unclustered codebooks and distribution sets.
+
+	    python createUnclusteredDescriptions.py
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Create unclustered CD distribution lexicon from distribution set description:
+
+	    echo eps > ./wghts/DistribLexiconUnclusteredCD.txt
+	    zcat ./wghts/unclusterContextDependent.dssDesc.gz | fgrep -v ';' | gawk '{print $1}' >> ./wghts/DistribLexiconUnclusteredCD.txt
+
+	    Note: Add end of word markers
+   
+	    python
+	    >>> from asr.fsm import *
+	    >>> lex = LexiconPtr('Distribution Lexicon')
+	    >>> lex.read('./wghts/DistribLexiconUnclusteredCD.txt')
+	    >>> lex.write('./wghts/DistribLexiconUnclusteredCD.txt')
+	    ctrl-D
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Initialize unclustered CD models from their CI counterparts with initializeUnclusteredCDModel.py
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Create unclustered, context dependent 'H' transducer with createUnclusteredH.py.
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Train unclustered CD model with two Viterbi iterations to generate statistics
+	    for state clustering with trainUnclusteredCD.py
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Now initialized the state clustering tree with makeDistribTree.py
+	  </para>
+	  <para>
+	    Finally, cluster the states (senones) with clusterStates.py
+	  </para>
+	</listitem>
+      </itemizedlist>
+    </section>
+  </section>
+</chapter>

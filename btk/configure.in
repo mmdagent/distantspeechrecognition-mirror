@@ -212,6 +212,7 @@ AC_CONFIG_FILES([Makefile \
 		 beamformer/Makefile \
 		 TDEstimator/Makefile \
 		 cancelVP/Makefile \
+		 dereverberation/Makefile \
 		 maximumLikelihood/Makefile \
 		 objectiveMeasure/Makefile \
 		 sad/Makefile \

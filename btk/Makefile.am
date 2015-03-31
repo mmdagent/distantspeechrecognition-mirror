@@ -21,6 +21,7 @@ SUBDIRS = \
 	maximumLikelihood \
 	objectiveMeasure \
 	cancelVP \
+	dereverberation \
 	src \
 	lib
 

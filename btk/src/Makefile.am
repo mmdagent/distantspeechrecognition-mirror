@@ -21,7 +21,7 @@ ss_LDADD = \
 	$(top_srcdir)/modulated/libbtk_modulated.la \
 	$(top_srcdir)/postfilter/libbtk_postfilter.la
 ss_CXXFLAGS = $(GSL_CFLAGS) 
-ss_LDFLAGS = $(GSL_LIBS) $(GZIP_LIBS) 
+ss_LDFLAGS = $(GSL_LIBS) $(GZIP_LIBS) $(SNDFILE_LIBS)
 
 calcTimeDelay_SOURCES = calcTimeDelay.cc
 calcTimeDelay_LDADD = \
@@ -31,4 +31,4 @@ calcTimeDelay_LDADD = \
 	$(top_srcdir)/matrix/libbtk_matrix.la \
 	$(top_srcdir)/TDEstimator/libbtk_TDEstimator.la 
 calcTimeDelay_CXXFLAGS = $(GSL_CFLAGS)
-calcTimeDelay_LDFLAGS = $(GSL_LIBS) $(GZIP_LIBS)
+calcTimeDelay_LDFLAGS = $(GSL_LIBS) $(GZIP_LIBS) $(SNDFILE_LIBS)

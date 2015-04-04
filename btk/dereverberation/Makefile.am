@@ -1,10 +1,10 @@
-AM_CPPFLAGS = $(SFE_CFLAGS) $(NUMPY_CPPFLAGS)
+AM_CPPFLAGS = $(CPPFLAGS) $(NUMPY_CPPFLAGS)
 AM_CXXFLAGS = $(NUMPY_CPPFLAGS)
 
 lib_LTLIBRARIES = libbtk_dereverberation.la
 libbtk_dereverberation_la_SOURCES = \
 	dereverberation.cc
-libbtk_dereverberation_la_LDFLAGS = $(GSL_LIBS) $(SFE_LIBS) -lsfe_feature -lsfe_stream
+libbtk_dereverberation_la_LDFLAGS = $(GSL_LIBS) -lbtk_feature -lbtk_stream
 
 btk_dereverberation_includedir = $(pkgincludedir)/dereverberation
 btk_dereverberation_include_HEADERS = \
@@ -23,6 +23,6 @@ EXTRA_DIST = dereverberation.i
 
 SWIG_FILES = dereverberation_wrap.cxx
 SWIG_OPT = $(SWIG_PYTHON_OPT)
-SWIG_CPP = -I$(top_srcdir)/include $(AM_CPPFLAGS)
+SWIG_CPP = -I$(top_srcdir)/include 
 
 include $(SWIG_RULES)

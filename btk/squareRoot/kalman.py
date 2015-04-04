@@ -13,7 +13,7 @@ import scipy.stats.distributions
 from copy import *
 from numpy import *
 from numpy.linalg import *
-from btk.tdoa import *
+from mytdoa import *
 
 # make changes
 # Conventional Kalman filter
@@ -47,14 +47,14 @@ class KalmanFilter:
         self.lastUpdateT		= -1
         self.time			= -1
 
-        if initialXk == None:
+        if initialXk is None:
             self.xk_filter = zeros(self.stateLength, numpy.float)
         else:
             self.xk_filter = initialXk
 
 
     def withinRoom(self, x):
-        if self.boundaries == None:
+        if self.boundaries is None:
             return True
 
         for n in range(len(x)):
@@ -135,7 +135,7 @@ class KalmanFilter:
         # Perform prediction and correction if new observation is available
         self.predict()
         observation = self.source.next()
-        if not observation == None:
+        if not observation is None:
             elapsedTime = (self.time - self.lastUpdateT) * self.deltaT
             self.update(observation, elapsedTime)
 
@@ -165,7 +165,7 @@ class ExtendedKalmanFilter(KalmanFilter):
 
         self.predict()
         observation = self.source.next(frameX)
-        if not observation == None:
+        if not observation is None:
 
             self.H		= self.source.linearize(self.xk_predict, observation)
             observationLinear	= self.source.calcLinearizedObservation(self.xk_predict, self.H, observation)

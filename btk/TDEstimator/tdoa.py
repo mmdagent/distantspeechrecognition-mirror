@@ -179,7 +179,7 @@ class FarfieldLinearArrayTDOAFeatureVector:
 
     # Calculate true time delays of arrival based on predicted state estimate
     def tdoa(self, micPair, azimuth):
-        dist	= self.microphonePositions[micPair.secondMicX] - self.microphonePositions[micPair.firstMicX]
+        dist	= abs( self.microphonePositions[micPair.secondMicX] - self.microphonePositions[micPair.firstMicX] )
         tau	= dist * numpy.cos(azimuth) / self.c
         return numpy.array([tau],numpy.float)
 
@@ -192,7 +192,7 @@ class FarfieldLinearArrayTDOAFeatureVector:
         yk	= numpy.zeros(len(observation), numpy.float)
         n	= 0
         for micPair in observation:
-            yk[n] = observation[n].observation - (self.tdoa(micPair, azimuthk_predict) - numpy.dot(H[n,:], azimuthk_predict))
+            yk[n] = observation[n].observation - (self.tdoa(micPair, azimuthk_predict) - numpy.inner(H[n,:], azimuthk_predict))
 
             n += 1
 
@@ -206,7 +206,7 @@ class FarfieldLinearArrayTDOAFeatureVector:
         H = numpy.zeros([len(observation), len(azimuthk_predict)], numpy.float)
         rowX = 0
         for obs in observation:
-            dist	= self.microphonePositions[obs.secondMicX] - self.microphonePositions[obs.firstMicX]
+            dist	= abs( self.microphonePositions[obs.secondMicX] - self.microphonePositions[obs.firstMicX] )
             grad	= - dist * numpy.sin(azimuthk_predict) / self.c
             H[rowX,:]	= numpy.array([grad], numpy.float)
             rowX       += 1

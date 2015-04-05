@@ -36,9 +36,9 @@ typedef int size_t;
 %ignore *::nextSampleBlock(const double* smp);
 
 %pythoncode %{
-import sfe
-from sfe import stream
-from sfe import feature
+import btk
+from btk import stream
+from btk import feature
 oldimport = """
 %}
 %import stream/stream.i

@@ -32,6 +32,7 @@ class KalmanFilter:
         self.deltaT			= deltaT
         self.gateProbability		= gateProbability
         self.boundaries			= boundaries
+        self.observed                   = False
 
         print 'Gate probability = %10.4f' %gateProbability
 
@@ -52,6 +53,10 @@ class KalmanFilter:
         else:
             self.xk_filter = initialXk
 
+
+    def isSourceObserved(self):
+        return self.observed
+    
 
     def withinRoom(self, x):
         if self.boundaries is None:
@@ -138,7 +143,9 @@ class KalmanFilter:
         if not observation is None:
             elapsedTime = (self.time - self.lastUpdateT) * self.deltaT
             self.update(observation, elapsedTime)
-
+            self.observed = True
+        else:
+            self.observed = False
         self.time += 1
 
         return self.xk_filter
@@ -171,6 +178,9 @@ class ExtendedKalmanFilter(KalmanFilter):
             observationLinear	= self.source.calcLinearizedObservation(self.xk_predict, self.H, observation)
             elapsedTime		= (self.time - self.lastUpdateT) * self.deltaT
             self.update(observationLinear, elapsedTime)
+            self.observed = True
+        else:
+            self.observed = False
 
         self.time += 1
 

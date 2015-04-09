@@ -1,4 +1,6 @@
-AM_CPPFLAGS = $(CPPFLAGS) $(JACK_CFLAGS)
+FEATURE_FLAGS = $(GSL_CFLAGS) $(SNDFILE_CFLAGS) $(SAMPLERATE_CFLAGS) $(JACK_CFLAGS) $(OPENCV_CFLAGS) -I$(top_srcdir)/gnulib
+AM_CPPFLAGS = \
+	$(CPPFLAGS) $(FEATURE_FLAGS)
 lib_LTLIBRARIES = libbtk_portnoff.la
 libbtk_portnoff_la_SOURCES = portnoff.cc
 libbtk_portnoff_la_LIBADD  = $(top_srcdir)/stream/libbtk_stream.la $(top_srcdir)/feature/libbtk_feature.la
@@ -20,6 +22,6 @@ EXTRA_DIST = portnoff.i
 
 SWIG_FILES = portnoff_wrap.cxx
 SWIG_OPT = $(SWIG_PYTHON_OPT)
-SWIG_CPP = -I$(top_srcdir)/include $(JACK_CFLAGS)
+SWIG_CPP = -I$(top_srcdir)/include $(FEATURE_FLAGS)
 
 include $(SWIG_RULES)

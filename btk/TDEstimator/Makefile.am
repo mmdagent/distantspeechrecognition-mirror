@@ -1,4 +1,5 @@
-AM_CPPFLAGS = $(CPPFLAGS)
+FEATURE_FLAGS = $(GSL_CFLAGS) $(SNDFILE_CFLAGS) $(SAMPLERATE_CFLAGS) $(JACK_CFLAGS) $(OPENCV_CFLAGS) -I$(top_srcdir)/gnulib
+AM_CPPFLAGS = $(CPPFLAGS) $(FEATURE_FLAGS)
 lib_LTLIBRARIES = libbtk_TDEstimator.la
 libbtk_TDEstimator_la_SOURCES = CCTDE.cc 
 libbtk_TDEstimator_la_LIBADD  = $(top_srcdir)/stream/libbtk_stream.la $(top_srcdir)/feature/libbtk_feature.la $(top_srcdir)/modulated/libbtk_modulated.la
@@ -20,6 +21,6 @@ EXTRA_DIST = TDEstimator.i
 
 SWIG_FILES = TDEstimator_wrap.cxx
 SWIG_OPT = $(SWIG_PYTHON_OPT)
-SWIG_CPP = -I$(top_srcdir)/include 
+SWIG_CPP = -I$(top_srcdir)/include $(FEATURE_FLAGS)
 
 include $(SWIG_RULES)

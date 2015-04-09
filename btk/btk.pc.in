@@ -7,4 +7,4 @@ Name: btk
 Description: Beamforming Toolkit
 Version: @VERSION@
 Libs: -L${libdir} -lbtk_common -lbtk_stream -lbtk_matrix -lbtk_feature
-Cflags: -I${includedir}/btk
+Cflags: -I${includedir}/btk @GSL_CFLAGS@ @SNDFILE_CFLAGS@ @SAMPLERATE_CFLAGS@ @JACK_CFLAGS@ @OPENCV_CFLAGS@
